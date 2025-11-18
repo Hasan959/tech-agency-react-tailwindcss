@@ -1,9 +1,14 @@
+import { BrowserRouter } from "react-router"
+import Nav from "./Components/Nav"
 
 
 function App() {
   return (
     <>
-      <div className="text-4xl bg-red-800 p-10 " > hasan </div>
+      <BrowserRouter>
+          <Nav/>
+          
+      </BrowserRouter>
     </>
   )
 }
