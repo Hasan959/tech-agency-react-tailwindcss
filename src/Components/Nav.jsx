@@ -22,8 +22,24 @@ const Nav = () => {
           ${navBg ? "bg-white shadow-lg text-black" : "bg-transparent text-white"}`} >
             <Link to="/" className={`logo text-4xl font-semibold transition-all duration-500
                ${navBg ? "text-black" : "text-white"}`}>
-                Nov <span className='text-black' >a.</span>  
+                Nov <span className='text-primary' >a.</span>  
             </Link>
+
+            <div className='cursor-pointer z-60' onClick={() => setMenuOpen(!menuOpen)}>
+              <span 
+                   className= {`block w-10 h-0.5 transition-all duration-500
+                   ${navBg ?"bg-black" : "bg-white"}
+                   ${menuOpen ? "rotate-45 translate-y-2" : ""}`}
+              >
+              </span>
+              <span 
+                   className= {`block w-10 h-0.5 mt-2.5 transition-all duration-500
+                   ${navBg ?"bg-black" : "bg-white"}
+                   ${menuOpen ? "-rotate-45 -translate-y-1.5" : ""}`}
+              >
+              </span>
+              
+            </div>
           </div>
     </>
   )
