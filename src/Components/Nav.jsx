@@ -1,3 +1,4 @@
+import { Icon } from '@iconify/react';
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router';
 
@@ -41,6 +42,40 @@ const Nav = () => {
               
             </div>
           </div>
+
+          <div className= {`fixed top-0 left-0 w-full h-screen backdrop-blur-sm bg-black/90 text-white px-[2%] md:px-[8%] xl:px-[12%] z-20 flex flex-col justify-center items-start transform transition-all duration-700 ease-[cubic-beizer(0,77,0,0.75,1)] origin-top
+          ${menuOpen
+             ? "opacity-100 translate-y-0 scale-100 pointer-events-auto"
+             : "opacity-0 -translate-y-10 scale-y-0 pointer-events-none " }`}>
+              <ul className="space-y-10">
+                <li>
+                  <Link to="/" className='text-4xl lg:text-6xl font-bold' 
+                    onClick={()=> setMenuOpen(false) } >
+                      Home
+                  </Link>
+                </li>
+                <li className='relative'>
+                  <Link to="/about" className='text-4xl lg:text-6xl font-bold' 
+                    onClick={()=> setMenuOpen(false) } >
+                      About
+                  </Link>
+                  <li className='relative'>
+                    <button onClick={()=> toggleDropdown("pages")}
+                      className='flex cursor-pointer items-center text-4xl lg:text-6xl gap-2 font-bold  '>
+                      pages
+                      <Icon  icon="ri:arrow-down-s-line"
+                             width="40"
+                             hanging="40"
+                             className={`transition-transform duration-300 
+                              ${openDropdown ==="pages" ? "rotate-180" :"" }`} />
+
+                    </button>
+                  
+                </li>
+                </li>
+              </ul>
+
+             </div>
     </>
   )
 }
