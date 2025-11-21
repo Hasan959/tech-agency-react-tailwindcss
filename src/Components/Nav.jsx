@@ -19,7 +19,7 @@ const Nav = () => {
 
   return (
     <>
-        <div  className={`navabar h-[90px] flex justify-between items-center px-[2%] md:px-[8%] xl:px-[12%] fixed top-0 left-0 right-0 z-0 transition-all duration-500 
+        <div  className={`navabar h-[90px] flex justify-between items-center px-[2%] md:px-[8%] xl:px-[12%] fixed top-0 left-0 right-0 z-50 transition-all duration-500 
           ${navBg ? "bg-white shadow-lg text-black" : "bg-transparent text-white"}`} >
             <Link to="/" className={`logo text-4xl font-semibold transition-all duration-500
                ${navBg ? "text-black" : "text-white"}`}>
@@ -54,11 +54,14 @@ const Nav = () => {
                       Home
                   </Link>
                 </li>
-                <li className='relative'>
+
+                <li>
                   <Link to="/about" className='text-4xl lg:text-6xl font-bold' 
                     onClick={()=> setMenuOpen(false) } >
                       About
                   </Link>
+                </li>
+
                   <li className='relative'>
                     <button onClick={()=> toggleDropdown("pages")}
                       className='flex cursor-pointer items-center text-4xl lg:text-6xl gap-2 font-bold  '>
@@ -70,9 +73,67 @@ const Nav = () => {
                               ${openDropdown ==="pages" ? "rotate-180" :"" }`} />
 
                     </button>
-                  
+                    <ul className={`overflow-hidden transition-all duration-300
+                       ${openDropdown === "pages" ? "max-h[400px] opacity-100 mt-3"
+                        : " max-h-0 opacity-0 "
+                       } `}>
+                        {["Team" , "Services","Prices Plan", "FAQ"].map((item)=>(
+                          <li key={item} >
+                             <Link to={`/${item.toLocaleLowerCase().replace(/\s/g, "")}`}
+                              className='block py-2 text-4xl font-semibold'
+                               onClick={()=> {
+                               setMenuOpen(false) 
+                               setOpenDropdown("")}}>
+                                {item}
+                             </Link>
+                          </li>
+
+                        ))}
+
+                    </ul>
                 </li>
+                 <li>
+                  <Link to="/projects" className='text-4xl lg:text-6xl font-bold' 
+                    onClick={()=> setMenuOpen(false) } >
+                      Projects
+                  </Link>
                 </li>
+
+
+
+
+                <li className='relative'>
+                    <button onClick={()=> toggleDropdown("blogs")}
+                      className='flex cursor-pointer items-center text-4xl lg:text-6xl gap-2 font-bold  '>
+                      Blog
+                      <Icon  icon="ri:arrow-down-s-line"
+                             width="40"
+                             hanging="40"
+                             className={`transition-transform duration-300 
+                              ${openDropdown === "blogs" ? "rotate-180" :"" }`} />
+                    </button>
+
+                    <ul className={`overflow-hidden transition-all duration-300
+                       ${openDropdown === "blogs" ? "max-h[400px] opacity-100 mt-3"
+                        : " max-h-0 opacity-0 "
+                       } `}>
+                        {["Team" , "Services","Prices Plan", "FAQ"].map((item)=>(
+                          <li key={item} >
+                             <Link to={`/${item.toLocaleLowerCase().replace(/\s/g, "")}`}
+                              className='block py-2 text-4xl font-semibold'
+                               onClick={()=> {
+                               setMenuOpen(false) 
+                               setOpenDropdown("")}}>
+                                {item}
+                             </Link>
+                          </li>
+
+                        ))}
+
+                    </ul>
+                </li>
+
+                
               </ul>
 
              </div>
