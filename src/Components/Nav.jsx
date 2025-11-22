@@ -114,21 +114,29 @@ const Nav = () => {
                     </button>
 
                     <ul className={`overflow-hidden transition-all duration-300
-                       ${openDropdown === "blogs" ? "max-h[400px] opacity-100 mt-3"
+                       ${openDropdown === "blogs" ? "max-h[200px] opacity-100 mt-3"
                         : " max-h-0 opacity-0 "
                        } `}>
-                        {["Team" , "Services","Prices Plan", "FAQ"].map((item)=>(
-                          <li key={item} >
-                             <Link to={`/${item.toLocaleLowerCase().replace(/\s/g, "")}`}
-                              className='block py-2 text-4xl font-semibold'
-                               onClick={()=> {
-                               setMenuOpen(false) 
-                               setOpenDropdown("")}}>
-                                {item}
-                             </Link>
-                          </li>
+                        
+                        <li>
+                          <Link to="/blog" className=' block text-4xl font-semibold'
+                           onClick={() =>{  setMenuOpen(false) 
+                                           setOpenDropdown("")
+                                         }}
+                                         >
+                                          Blog
+                          </Link>
+                        </li>
 
-                        ))}
+                         <li>
+                          <Link to="/blog/1" className=' block text-4xl font-semibold'
+                           onClick={() =>{  setMenuOpen(false) 
+                                           setOpenDropdown("")
+                                         }}
+                                         >
+                                          Blog Details
+                          </Link>
+                        </li>
 
                     </ul>
                 </li>
