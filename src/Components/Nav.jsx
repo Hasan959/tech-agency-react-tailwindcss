@@ -48,12 +48,12 @@ const Nav = () => {
              ? "opacity-100 translate-y-0 scale-100 pointer-events-auto"
              : "opacity-0 -translate-y-10 scale-y-0 pointer-events-none " }`}>
               <ul className="space-y-10">
-                <li>
-                  <Link to="/" className='text-4xl lg:text-6xl font-bold' 
-                    onClick={()=> setMenuOpen(false) } >
+                 <li>
+                   <Link to="/" className='text-4xl lg:text-6xl font-bold' 
+                      onClick={()=> setMenuOpen(false) } >
                       Home
-                  </Link>
-                </li>
+                   </Link>
+                 </li>
 
                 <li>
                   <Link to="/about" className='text-4xl lg:text-6xl font-bold' 
@@ -69,11 +69,11 @@ const Nav = () => {
                       <Icon  icon="ri:arrow-down-s-line"
                              width="40"
                              hanging="40"
-                             className={`transition-transform duration-300 
+                             className={`transition-transform duration-700 
                               ${openDropdown ==="pages" ? "rotate-180" :"" }`} />
 
                     </button>
-                    <ul className={`overflow-hidden transition-all duration-300
+                    <ul className={`overflow-hidden transition-all duration-700
                        ${openDropdown === "pages" ? "max-h[400px] opacity-100 mt-3"
                         : " max-h-0 opacity-0 "
                        } `}>
@@ -109,11 +109,11 @@ const Nav = () => {
                       <Icon  icon="ri:arrow-down-s-line"
                              width="40"
                              hanging="40"
-                             className={`transition-transform duration-300 
+                             className={`transition-transform duration-700 
                               ${openDropdown === "blogs" ? "rotate-180" :"" }`} />
                     </button>
 
-                    <ul className={`overflow-hidden transition-all duration-300
+                    <ul className={`overflow-hidden transition-all duration-700
                        ${openDropdown === "blogs" ? "max-h[200px] opacity-100 mt-3"
                         : " max-h-0 opacity-0 "
                        } `}>
@@ -140,6 +140,12 @@ const Nav = () => {
 
                     </ul>
                 </li>
+                <li>
+                  <Link to="/contact" className='text-4xl lg:text-6xl font-bold' 
+                    onClick={()=> setMenuOpen(false) } >
+                      Contact Us
+                  </Link>
+                </li>
 
                 
               </ul>
@@ -152,3 +158,28 @@ const Nav = () => {
 export default Nav
 
 
+// import React, { useState } from 'react'
+// import { Link } from 'react-router'
+// const Nav = () => {
+// const [navBg, setNavBg ] = useState( false)
+//   return (
+//    <>
+//    <div className={`${navBg ? "bg-white shadow-lg text-black" : "bg-transparent text-black"}`}>
+
+     
+//     <Link to="/" className={` ${navBg ? "text-black" : "text-white "  }`} >
+//     Naha <span className='text-primary' > R </span>
+//     </Link>
+
+//     <div className='cursor-pointer z-60 '>
+//       <span></span>
+//     </div>
+     
+//    </div>
+       
+
+//    </>
+//   )
+// }
+
+// export default Nav
