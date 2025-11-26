@@ -171,7 +171,7 @@ export default Nav
 // const [navBg, setNavBg ] = useState( false);
 // const [openDropdown, setOpenDropdown ] =useState("");
 // const toggleDropdown = (name) => {
-//   setOpenDropdown(openDropdown === name ?"" : name  )
+//   setOpenDropdown(openDropdown === name ? "" : name  )
 // }
 //   return (
 //    <>
@@ -191,7 +191,7 @@ export default Nav
 //    </div>
 
 
-//    <div className={`fixed top-0 left-0 w-full h-screen backdrop-blur-sm bg-black/90  px-[2%] md:px-[8%] xl:px-[12%] z-20 flex flex-col justify-center items-start transform transition-all duration-700 ease-[cubic-beizer(0,77,0,0.75,1)] origin-top ${menuOpen ?
+//    <div className={`fixed top-0 left-0 w-full h-screen backdrop-blur-sm bg-red-500  px-[2%] md:px-[8%] xl:px-[12%] z-20 flex flex-col justify-center items-start transform transition-all duration-700 ease-[cubic-beizer(0,77,0,0.75,1)] origin-top ${menuOpen ?
 //      "opacity-100 translate-y-0 scale-100 pointer-events-auto text-white ":"opacity-0 -translate-y-10 scale-y-0 pointer-events-none text-orange-500"  }`}>
 //     <ul className='space-y-10'>
 //     <li>
@@ -206,7 +206,13 @@ export default Nav
 //         </Link>
 //       </li>
 //       <li className='relative' >
-//         <button onClick={()=> toggleDropdown("pages")} className='text-4xl'> Pages <Icon/>  </button>
+//         <button onClick={()=> toggleDropdown("pages")} className=' flex cursor-pointer items-center  text-4xl lg:text-6xl gap-2 font-bold '> Pages <Icon icon="ri:arrow-down-s-line" width="40" hanging="40" className={`transition-transform  duration-700 ${openDropdown === "pages" ? "rotate-180" : "" }`}  />  </button>
+//         <ul className={`transition-all overflow-hidden duration-700 
+//           ${openDropdown === "pages" ? "max-h[400px] opacity-100 mt-3  ": "max-h-0 opacity-0 "  } `} >
+//           {["Team" , "Services", "Prices Plan", "FAQ"].map((item)=>( <li key={item}> <Link to={``} className='block py-2 text-4xl font-semibold' onClick={()=>{setMenuOpen(false) 
+//           setOpenDropdown("")}} > {item} </Link>  </li> 
+//            ))}
+//         </ul>
 //       </li>
 
     
