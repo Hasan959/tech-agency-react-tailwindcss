@@ -205,6 +205,7 @@ export default Nav
 //          About
 //         </Link>
 //       </li>
+
 //       <li className='relative' >
 //         <button onClick={()=> toggleDropdown("pages")} className=' flex cursor-pointer items-center  text-4xl lg:text-6xl gap-2 font-bold '> Pages <Icon icon="ri:arrow-down-s-line" width="40" hanging="40" className={`transition-transform  duration-700 ${openDropdown === "pages" ? "rotate-180" : "" }`}  />  </button>
 //         <ul className={`transition-all overflow-hidden duration-700 
@@ -213,6 +214,17 @@ export default Nav
 //           setOpenDropdown("")}} > {item} </Link>  </li> 
 //            ))}
 //         </ul>
+//       </li>
+
+//       <li>
+//         <Link to="/projects" className='text-4xl lg:text-6xl font-bold' onClick={()=> setMenuOpen(false) } >
+//         Projects
+//         </Link>
+//       </li>
+
+
+//       <li className='relative'> 
+//         <button> Blog </button>
 //       </li>
 
     
