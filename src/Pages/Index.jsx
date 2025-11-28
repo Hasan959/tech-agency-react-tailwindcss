@@ -11,6 +11,7 @@ const Index = () => {
           <source src={heroVideo} type='video/mp4'/>
 
         </video>
+        <div className='px-[2%] md:px-[8%] xl:px-[12%] text-white h-full w-full'></div>
        </div>
 
     </>
