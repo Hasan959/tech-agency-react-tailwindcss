@@ -26,9 +26,15 @@ const Index = () => {
           Creative studio at the intersection of art, design and technology.
         </p>
         <a href="#"
-            className='absolute right-0 bottom-16 w-[67px] h-[67px] rounded-full border border-white z-30 cursor-pointer flex items-center justify-center group hover:scale-110 transition-transform duration-300 '>
-              <span className='absolute inset-0 rounded-full border border-white opacity-50 animate-pulseRing '></span>
-              <span></span>
+            className='absolute right-20 bottom-16 w-[67px] h-[67px] rounded-full border border-white z-30 cursor-pointer flex items-center justify-center group hover:scale-110 transition-transform duration-300 '>
+              <span className='absolute inset-0 rounded-full border border-white opacity-50 animate-pulseRing text-white'></span>
+              <span className='relative flex items-end justify-between w-[22px] h-[22px] z-10  '>
+                <span className='w-1 h-3 bg-white animate-eq1 '></span>
+                <span className='w-1 bg-white animate-eq2 '></span>
+                <span className='w-1 bg-white animate-eq3 '></span>
+                <span className='w-1 bg-white animate-eq4 '></span>
+              </span>
+              
             </a>
         </div>
         
