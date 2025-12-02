@@ -1,6 +1,9 @@
 import React from 'react'
 import heroVideo from "../assets/Images/hero-video.mp4"
 import title_icon from "../assets/Images/title_icon.svg"
+import ser1 from "../assets/Images/serv-icon1.png" 
+import ser2 from "../assets/Images/serv-icon2.png" 
+import ser3 from "../assets/Images/serv-icon3.png" 
 
 import { Link } from 'react-router'
 import { Icon } from '@iconify/react'
@@ -28,11 +31,14 @@ const Index = () => {
         <a href="#"
             className='absolute right-20 bottom-16 w-[67px] h-[67px] rounded-full border border-white z-30 cursor-pointer flex items-center justify-center group hover:scale-110 transition-transform duration-300 '>
               <span className='absolute inset-0 rounded-full border border-white opacity-50 animate-pulseRing text-white'></span>
-              <span className='relative flex items-end justify-between w-[22px] h-[22px] z-10  '>
-                <span className='w-1 h-3 bg-white animate-eq1 '></span>
-                <span className='w-1 bg-white animate-eq2 '></span>
-                <span className='w-1 bg-white animate-eq3 '></span>
-                <span className='w-1 bg-white animate-eq4 '></span>
+
+              {/* Outer <span> → জায়গা তৈরি করে দেয় (container) */}
+              <span className='relative  flex items-end justify-between w-[22px] h-[25px]  z-10  '>
+                {/* ➤ Inner <span> → আসল bars (equalizer strokes) */}
+                <span className='w-1 h-1 bg-white animate-eq1 '></span>
+                <span className='w-1 h-1 bg-white animate-eq2 '></span>
+                <span className='w-1 h-1 bg-white animate-eq3 '></span>
+                <span className='w-1 h-1 bg-white animate-eq4 '></span>
               </span>
               
             </a>
