@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import heroVideo from "../assets/Images/hero-video.mp4"
 import title_icon from "../assets/Images/title_icon.svg"
 import ser1 from "../assets/Images/serv-icon1.png" 
@@ -10,6 +10,8 @@ import { Icon } from '@iconify/react'
 
 
 const Index = () => {
+
+  const [activeIndex,setActiveIndex] = useState(1)
   return (
     
     <>
@@ -45,6 +47,9 @@ const Index = () => {
         </div>
         
        </div>
+       
+
+
 
     </>
   )
