@@ -12,6 +12,12 @@ import { Icon } from '@iconify/react'
 const Index = () => {
 
   const [activeIndex,setActiveIndex] = useState(1)
+
+  const services = [
+    {id: 1 , title: "Creation" , img: ser1},
+    {id: 2 , title: "Creation" , img: ser2},
+    {id: 3 , title: "Creation" , img: ser3},
+  ]
   return (
     
     <>
@@ -45,11 +51,10 @@ const Index = () => {
               
             </a>
         </div>
-        
+      
        </div>
-       
-
-
+      {/* Services */}
+      <div className='services grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-5 py-[8%] px-[2%] md:px-[8%] xl:px-[12%]  '>   </div>
 
     </>
   )

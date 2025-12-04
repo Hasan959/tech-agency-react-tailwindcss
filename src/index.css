@@ -11,7 +11,7 @@ body{
     background: #6b696e;
 }
 
-@theme {
+@theme{
     --color-primary: #D8ff36;
 
     @keyframes eqBar1 {
