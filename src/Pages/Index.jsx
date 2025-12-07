@@ -57,7 +57,18 @@ const Index = () => {
       {/* Services */}
       <div className='services grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-5 py-[8%] px-[2%] md:px-[8%] xl:px-[12%] '>
         {services.map((service, index)=>(
-          <div key={service.id} className={`w-full text-center group rounded-full p-10 flex justify-center items-center flex-col relative service-item h-[450px] transition-all duration-300  ${activeIndex === index ? "active bg-primary ":"bg-red-700" } `} ></div>
+          <div key={service.id} className={`w-full text-center group rounded-full p-10 flex justify-center items-center flex-col relative service-item h-[450px] transition-all duration-300  ${activeIndex === index ? "active bg-primary ":"bg-red-700" } `}
+          onMouseEnter={() => setActiveIndex(index)}
+          onMouseLeave={() => setActiveIndex(1)}
+          
+          >
+            <img 
+               src={service.img}
+               alt={service.title}
+               width={60}
+               height={60} 
+               className={`pb-4 transition-all `} />
+          </div>
         ))}
       </div>
 
