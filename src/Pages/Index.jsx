@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { act, useState } from 'react'
 import heroVideo from "../assets/Images/hero-video.mp4"
 import title_icon from "../assets/Images/title_icon.svg"
 import ser1 from "../assets/Images/serv-icon1.png" 
@@ -57,7 +57,7 @@ const Index = () => {
       {/* Services */}
       <div className='services grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-5 py-[8%] px-[2%] md:px-[8%] xl:px-[12%] '>
         {services.map((service, index)=>(
-          <div key={service.id} className={`w-full text-center group rounded-full p-10 flex justify-center items-center flex-col relative service-item h-[450px] transition-all duration-300  ${activeIndex === index ? "active bg-primary ":"bg-red-700" } `}
+          <div key={service.id} className={`w-full text-center group rounded-full p-10 flex justify-center items-center flex-col relative service-item h-[450px] transition-all duration-300  ${activeIndex === index ? "active bg-primary ":"bg-transparent" } `}
           onMouseEnter={() => setActiveIndex(index)}
           onMouseLeave={() => setActiveIndex(1)}
           
@@ -67,7 +67,18 @@ const Index = () => {
                alt={service.title}
                width={60}
                height={60} 
-               className={`pb-4 transition-all `} />
+               className={`pb-4 transition-all duration-300 ${activeIndex ===index ? "filter-none" : "invert"  } `}
+               />
+               <div className={`service-content transition-all duration-300 
+                  ${activeIndex === index ? "text-black" : "text-white"}`}>
+                    <h2 className='text-5xl font-semibold pb-6'> {service.title} </h2>
+                    <p className='text-xl'> Developing websites is about so more than marketing.its also about asthetics. </p>
+                  </div>
+                  {/* Bubble */}
+                  <div className='nova-bubble absolute bottom-[-60px] right-0 w-[142px] h-[152px] pointer-events-none'>
+                    <div className={`bubble-1 w-8 h-8 rounded-full bg-pink-300 absolute transition-all duration-500 
+                     ${activeIndex == index ? "": "" }  `}></div>
+                  </div>
           </div>
         ))}
       </div>
