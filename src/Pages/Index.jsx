@@ -77,7 +77,19 @@ const Index = () => {
                   {/* Bubble */}
                   <div className='nova-bubble absolute bottom-[-60px] right-0 w-[142px] h-[152px] pointer-events-none'>
                     <div className={`bubble-1 w-8 h-8 rounded-full bg-pink-300 absolute transition-all duration-500 
-                     ${activeIndex == index ? "": "" }  `}></div>
+                     ${activeIndex == index 
+                     ?"opacity-100 bottom-0 right-0 scale-100"
+                     :"opacity-0 bottom-[-20%] ring-[-10%] scale-0"}`}> 
+                     </div>
+
+                     <div className={`bubble-1 w-6 h-6 bg-blue-300 rounded-full absolute transition-all duration-all delay-100
+                       ${activeIndex== index ? "opacity-100 bottom-[30%] left-0 scale-100 ": "opacity-0 bottom-[-60%] scale-0"}`} ></div>
+
+                       <div className={`bubble-3 w-6 h-6 bg-red-500 rounded-full absolute transition-all duration-300 delay-300
+                        ${activeIndex == index ? "" : "" }  `}></div>
+
+                       
+                       
                   </div>
           </div>
         ))}
