@@ -8,208 +8,225 @@
 }
 
 body{
-    background: #000;
+    background-color: #000;
 }
 
+
 @theme{
-    --color-primary: #D8ff36;
+    --color-primary: #D8FF36;
 
     @keyframes eqBar1 {
-        0%,
-        100%{
-            height:20%;
-        }
-        50%{
-            height:90%;
-        }
+        0%,100%{ height:20%; }
+        50%{ height:90%; }
     }
 
     @keyframes eqBar2 {
-        0%,
-        100% {
-            height: 40%;
-        }
-
-        50% {
-            height: 100%;
-        }
+        0%,100% { height:40%; }
+        50% { height:100%; }
     }
+
     @keyframes eqBar3 {
-        0%,
-        100% {
-            height: 70%;
-        }
-
-        50% {
-            height: 30%;
-        }
+        0%,100% { height:70%; }
+        50% { height:30%; }
     }
+
     @keyframes eqBar4 {
-        0%,
-        100% {
-            height: 30%;
-        }
-
-        50% {
-            height: 80%;
-        }
+        0%,100% { height:30%; }
+        50% { height:80%; }
     }
+
     @keyframes pulseRing {
-        0% {
-            transform: scale(1);
-            opacity: 1;
-        }
-
-        70% {
-            transform: scale(1.4);
-            opacity: 0;
-            
-        }
-        100% {
-            transform: scale(1);
-            opacity: 0;
-        }
+        0% { transform: scale(1); opacity:1; }
+        70% { transform: scale(1.4); opacity:0; }
+        100% { transform: scale(1); opacity:0; }
     }
+
     @keyframes bubbleOne {
         0% {
-            bottom: -20%;
+            bottom:-20%;
             right:-10%;
-            opacity: 0;
-            transform: scale(.3)
+            opacity:0;
+            transform:scale(.3);
         }
-
         50% {
             bottom:0;
             right:0;
-            oapcity:1;
+            opacity:1;
             transform:scale(1.05);
         }
-
         100% {
             bottom:0;
             right:0;
-            opacity: 1;
-            transform:1;
+            opacity:1;
             transform:scale(1);
         }
     }
 
     @keyframes bubbleTwo {
         0% {
-            bottom: 0px;
-            left: -40%;
-            opacity: 0;
-            transform: scale(.25)
+            bottom:0px;
+            left:-40%;
+            opacity:0;
+            transform:scale(.25);
         }
-
         50% {
-            bottom: 30%;
-            left: 0px;
-            oapcity: 1;
-            transform: scale(1);
+            bottom:30%;
+            left:0px;
+            opacity:1;
+            transform:scale(1);
         }
-
         100% {
-            bottom: 30px;
-            right: 0px;
-            opacity: 1;
-            transform: scale(1);
+            bottom:30%;
+            left:0px;
+            opacity:1;
+            transform:scale(1);
         }
     }
 
     @keyframes bubbleThree {
         0% {
-            bottom: 30%;
-            left: 30%;
-            opacity: 0;
-            transform: scale(.35)
+            bottom:30%;
+            left:30%;
+            opacity:0;
+            transform:scale(.35);
         }
-
         50% {
-            bottom: 63%;
-            left: 57%;
-            oapcity: 1;
-            transform: scale(1);
+            bottom:63%;
+            left:57%;
+            opacity:1;
+            transform:scale(1);
         }
-
         100% {
-            bottom: 63%;
-            left: 57%;
-            opacity: 1;
-            transform: scale(1);
+            bottom:63%;
+            left:57%;
+            opacity:1;
+            transform:scale(1);
         }
     }
 
     @keyframes novoCtaCircle{
-        0% {
-            transform: scale(1)
-        }
-
-        50% { 
-            transform: scale(0.85);
-        }
-
-        100% {
-            transform: scale(1);
-        }
+        0%{ transform:scale(1) }
+        50%{ transform:scale(.85) }
+        100%{ transform:scale(1) }
     }
 
     @keyframes novoCtaCircleTwo{
-        0% {
-            transform: scale(1)
-        }
-
-        50% { 
-            transform: scale(0.75);
-        }
-
-        100% {
-            transform: scale(1);
-        }
+        0%{ transform:scale(1) }
+        50%{ transform:scale(.75) }
+        100%{ transform:scale(1) }
     }
 
     @keyframes onovoCtaCircleThree{
-        0% {
-            transform: scale(1)
-        }
-
-        50% { 
-            transform: scale(0.65);
-        }
-
-        100% {
-            transform: scale(1);
-        }
+        0%{ transform:scale(1) }
+        50%{ transform:scale(.65) }
+        100%{ transform:scale(1) }
     }
-
 }
 
 @layer utilities {
-    .animate-eq1 {
-        animation: eqBar1 1s infinite ease-in-out;
-    }
 
-    .animate-eq2 {
-        animation: eqBar1 1.1s infinite ease-in-out;
-    }
+    .animate-eq1 { animation: eqBar1 1s infinite ease-in-out; }
+    .animate-eq2 { animation: eqBar2 1.1s infinite ease-in-out; }
+    .animate-eq3 { animation: eqBar3 1s infinite ease-in-out; }
+    .animate-eq4 { animation: eqBar4 1.2s infinite ease-in-out; }
 
-    .animate-eq3 {
-        animation: eqBar1 1s infinite ease-in-out;
+    .nova-bubble .bubbleOne {
+        animation: bubbleOne 2.5s cubic-bezier(0.3,0,0.3,1) forwards;
     }
-    .animate-eq4 {
-        animation: eqBar1 1.2s infinite ease-in-out;
+    .nova-bubble .bubbleTwo {
+        animation: bubbleTwo 1.5s cubic-bezier(0.3,0,0.3,1) forwards;
     }
+    .nova-bubble .bubbleThree {
+        animation: bubbleThree 2s cubic-bezier(0.3,0,0.3,1) forwards;
+    }
+}
 
-    .novo-bubble .bubbleOne {
-        animation: 2.5s cubic-bezier(0.3, 0, 0.3, 1) 0s 1 normal forwards running bubbleOne;
-    }
 
-    .novo-bubble .bubbleTwo {
-        animation: 1.5s cubic-bezier(0.3, 0, 0.3, 1) 0s 1 normal forwards running bubbleTwo;
-    }
+/* Custom CSS */
 
-    .novo-bubble .bubbleThree {
-        animation: 2s cubic-bezier(0.3, 0, 0.3, 1) 0s 1 normal forwards running bubbleThree;
-    }
+/* Service Section */
 
-} 
+.nova-bubble{
+    position:absolute;
+    right:0;
+    bottom:-60px;
+    width:142px;
+    height:152px;
+    pointer-events:none;
+}
+
+.bubbleOne animation{
+    bottom: 0px;
+    transform: scale(1);
+    right: 0px;
+    opacity: 1;
+}
+.nova-bubble .bubble-1{
+    position: absolute;
+    width: 65px; 
+    height: 65px;
+    bottom: -20%;
+    right: -10%;
+    opacity: 0;
+    transform: scale(0.3);
+    border-radius: 100%;
+    background:rgb(216,255,54);
+}
+.bubbleTwo aniamtion{
+    bottom: 30%;
+    transform: scale(1);
+    left: 0;
+    opacity: 1;
+}
+.nova-bubble .bubble-2{
+    position: absolute;
+    width: 45px; 
+    height: 45px;
+    bottom: 0;
+    left: -10%;
+    opacity: 0;
+    transform: scale(0.25);
+    border-radius: 100%;
+    background:rgb(216,255,54);
+}
+.bubbleThree aniamtion{
+    bottom: 63%;
+    transform: scale(1);
+    left: 57%;
+    opacity: 1;
+}
+.nova-bubble .bubble-3{
+    position: absolute;
+    width: 35px; 
+    height: 35px;
+    bottom: 30%;
+    left: 30%;
+    opacity: 0;
+    transform: scale(0.5);
+    border-radius: 100%;
+    background:rgb(216,255,54);
+}
+.service-item::after{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: -50%;
+    background-color: var(--color-primary);
+    border-radius: 50%;
+    transition:0.5s ease-in-out ;
+    z-index: -1;
+}
+.service-item:active:hover:after{
+    width: 100%;
+    height: 100%;
+}
+.service-item.active .nova-bubble .bubble-1{
+    animation: bubbleOne 2.5s cubic-bezier(.3,0,.3,1) forwards ;
+
+}

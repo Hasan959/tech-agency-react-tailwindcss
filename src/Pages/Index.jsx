@@ -74,6 +74,7 @@ const Index = () => {
                     <h2 className='text-5xl font-semibold pb-6'> {service.title} </h2>
                     <p className='text-xl'> Developing websites is about so more than marketing.its also about asthetics. </p>
                   </div>
+
                   {/* Bubble */}
                   <div className='nova-bubble absolute bottom-[-60px] right-0 w-[142px] h-[152px] pointer-events-none'>
                     <div className={`bubble-1 w-8 h-8 rounded-full bg-pink-300 absolute transition-all duration-500 
@@ -82,11 +83,11 @@ const Index = () => {
                      :"opacity-0 bottom-[-20%] ring-[-10%] scale-0"}`}> 
                      </div>
 
-                     <div className={`bubble-1 w-6 h-6 bg-blue-300 rounded-full absolute transition-all duration-all delay-100
-                       ${activeIndex== index ? "opacity-100 bottom-[30%] left-0 scale-100 ": "opacity-0 bottom-[-60%] scale-0"}`} ></div>
+                     <div className={`bubble-2 w-6 h-6 bg-blue-300 rounded-full absolute transition-all duration-500 delay-100
+                       ${activeIndex== index ? "opacity-100 bottom-[30%] left-0 scale-100 ": "opacity-0 bottom-[50%] left-[40%] scale-0"}`} ></div>
 
-                       <div className={`bubble-3 w-6 h-6 bg-red-500 rounded-full absolute transition-all duration-300 delay-300
-                        ${activeIndex == index ? "" : "" }  `}></div>
+                       <div className={`bubble-3 w-10 h-10 bg-green-500 rounded-full absolute transition-all duration-500 delay-100
+                        ${activeIndex == index ? "opacity-100 bottom-[63%] left-[57%] scale-100 " : " opacity-0 bottom-[50%] left-[40%] scale-0"}`}></div>
 
                        
                        
