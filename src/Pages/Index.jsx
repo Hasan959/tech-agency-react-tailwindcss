@@ -96,6 +96,11 @@ const Index = () => {
         ))}
       </div>
 
+      {/* About */}
+      <div className='about py-[8%] px-[2%] md:px-[12%] flex justify-between items-start lg:flex-row flex-col gap-10 ' >
+        
+      </div>
+
     </>
   )
 }
