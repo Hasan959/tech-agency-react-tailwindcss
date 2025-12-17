@@ -310,3 +310,8 @@ body{
 }
 
 
+
+.service-item.active .nova-bubble .bubble-3{
+    animation: bubbleThree 2s cubic-bezier(.3,0,.3,1) forwards;
+}
+
