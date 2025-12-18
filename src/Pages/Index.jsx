@@ -99,7 +99,8 @@ const Index = () => {
       {/* About */}
       <div className='about py-[8%] px-[2%] md:px-[12%] flex justify-between items-start lg:flex-row flex-col gap-10 ' >
         <div className="about-content w-full lg:w-[60%] ">
-          <span className='text-black bg-primary px-2 py-3 font-semibold text-md sm:text-xl rounded-sm'></span>
+          <span className='text-black bg-primary px-2 py-3 font-semibold text-md sm:text-xl rounded-sm'> welcome to Nova  </span>
+          <h2 className="text-3xl sm:text-6xl font-semibold sm:max-w-3xl my-6 leading-tight text-white"> A Design Agency Delivering Success by Winning Hearts </h2>
         </div>
         
       </div>
