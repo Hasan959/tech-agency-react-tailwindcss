@@ -38,7 +38,7 @@ const Index = () => {
           Creative studio at the intersection of art, design and technology.
         </p>
         <a href="#"
-            className='absolute right-20 bottom-16 w-[67px] h-[67px] rounded-full border border-white z-30 cursor-pointer flex items-center justify-center group hover:scale-110 transition-transform duration-300 '>
+            className='absolute  right-20 bottom-16 w-[67px] h-[67px] rounded-full border border-white z-30 cursor-pointer flex items-center justify-center group hover:scale-110 transition-transform duration-300 '>
               <span className='absolute inset-0 rounded-full border border-white opacity-50 animate-pulseRing text-white'></span>
 
               {/* Outer <span> → জায়গা তৈরি করে দেয় (container) */}
@@ -109,6 +109,16 @@ const Index = () => {
               From the moment our company was founded we have helped our clients find 
               <b>exceptional solutions for their business</b>memorable brands and digital products.our expertise grows with each year. and our accmulated experience 
             </p>
+            </li>
+            <li className='w-full xl:w-1/2'>
+            <span className='font-semibold text-2xl text-white'> our Goal </span>
+            <p className="text-md sm:text-xl mt-2 text-gray-300 ">
+              Our goal is to deliver amazing experiences that make people talk,and build stragic value for brands,tech entertainment.
+            </p>
+            <Link to="/about" className='btn rounded-sm '>
+               <Icon icon="vaadin:plush" width="30" height="30"/>
+               <span> More About Us  </span>
+            </Link>
             </li>
           </ul>
         </div>
