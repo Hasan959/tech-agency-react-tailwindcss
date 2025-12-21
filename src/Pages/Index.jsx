@@ -116,11 +116,14 @@ const Index = () => {
               Our goal is to deliver amazing experiences that make people talk,and build stragic value for brands,tech entertainment.
             </p>
             <Link to="/about" className='btn rounded-sm '>
-               <Icon icon="vaadin:plush" width="30" height="30"/>
+               <Icon icon="vaadin:plus" width="30" height="30"/>
                <span> More About Us  </span>
             </Link>
             </li>
           </ul>
+        </div>
+        <div className="w-full lg:w-[40%] flex justify-center items-center">
+          <div className='flex items-center justify-center w-[250px] h-[250px] relative border rounded-full ' ></div>
         </div>
         
       </div>
