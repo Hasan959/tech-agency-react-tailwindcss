@@ -4,9 +4,12 @@ import title_icon from "../assets/Images/title_icon.svg"
 import ser1 from "../assets/Images/serv-icon1.png" 
 import ser2 from "../assets/Images/serv-icon2.png" 
 import ser3 from "../assets/Images/serv-icon3.png" 
-
 import { Link } from 'react-router'
 import { Icon } from '@iconify/react'
+
+import "@splidejs/react-splide/css";
+import { Splide , SplideSlide } from '@splidejs/react-splide'
+import { Pagination } from 'swiper/modules'
 
 
 const Index = () => {
@@ -16,8 +19,14 @@ const Index = () => {
   const services = [
     {id: 1 , title: "Creation" , img: ser1},
     {id: 2 , title: "Creation" , img: ser2},
-    {id: 3 , title: "Creation" , img: ser3},
-    
+    {id: 3 , title: "Creation" , img: ser3}, 
+  ]
+
+  const items = [
+    "- Creative Direction",
+    "- Machine Learning/AI",
+    "- Brand Strategy",
+    "- Native and Web Apps",
   ]
   return (
     
@@ -112,7 +121,7 @@ const Index = () => {
             </li>
             <li className='w-full xl:w-1/2'>
             <span className='font-semibold text-2xl text-white'> our Goal </span>
-            <p className="text-md sm:text-xl mt-2 text-gray-300 ">
+            <p className="text-md sm:text-xl my-2 text-gray-300 ">
               Our goal is to deliver amazing experiences that make people talk,and build stragic value for brands,tech entertainment.
             </p>
             <Link to="/about" className='btn rounded-sm '>
@@ -122,10 +131,78 @@ const Index = () => {
             </li>
           </ul>
         </div>
+
         <div className="w-full lg:w-[40%] flex justify-center items-center">
-          <div className='flex items-center justify-center w-[250px] h-[250px] relative border rounded-full ' ></div>
+          <div className='flex items-center justify-center w-[250px] h-[250px] relative border rounded-full'>
+            <svg
+                  viewBox='0 0 300 300'
+                   className=' absolute w-full h-full animate-[spin_20s_linear_infinite] 
+                   '>
+
+                    <defs>
+                      <path 
+                           id='circlePath'
+                            d='M150 150, m-120  0, a120 120 0 1 1 240, 0 a120 120 0 1 1 -240 0'/ >
+
+                    </defs>
+                    <text
+                          fill='#fff'
+                           fontSize='16'
+                           fontWeight='600'
+                           letterSpacing='4'
+                           textLength='1400'
+                    >
+                      <textPath href='#circlePath' startOffset='0' >
+                        YEARS OF DIGITALS SOLUTIONS .YEARS OF DIGITAL SOLUTIONS .YEARS OF DIGITAL SOLUTIONS
+                      </textPath>
+                    </text>
+            </svg>
+            <div className="border rounded-[50%] px-6 py-5 ">
+              <div className='text-8xl font-bold text-transparent mt-5 border'
+                style={{
+                  WebkitTextStrokeWidth:"3px",
+                  WebkitTextFillColor: "#fff"
+                }}
+              >
+                14
+
+              </div>
+            </div>
+          </div>
         </div>
-        
+      </div>
+
+      {/* splide */}
+      <div className='py-[2%] flex justify-center items-center'>
+        <div className='w-full overflow-hidden border-t border-white border-b flex justify-center items-center h-full'>
+          <Splide
+               options={{
+                 type:"loop",
+                 drag: "free",
+                 focus: "center",
+                 autoWidth: true,
+                 arrow: false,
+                 pagination:false,
+                 gap: "3rem",
+                 autoPlay:true,
+                 interval:0,
+                 speed:100000,
+                 pauseOnHover:false,
+                 resetProgress:false
+               }} >
+                {items.map((text,index)=>(
+                  <SplideSlide key={index} >
+                    <div className='text-[10vw] font-bold uppercase whitespace-nowrap ' >
+
+                    </div>
+
+                  </SplideSlide>
+                ))}
+
+          </Splide>
+           
+
+        </div>
       </div>
 
     </>
