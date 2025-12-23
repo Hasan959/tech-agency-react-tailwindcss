@@ -8,8 +8,9 @@ import { Link } from 'react-router'
 import { Icon } from '@iconify/react'
 
 import "@splidejs/react-splide/css";
-import { Splide , SplideSlide } from '@splidejs/react-splide'
-import { Pagination } from 'swiper/modules'
+import { Splide ,SplideSlide} from "@splidejs/react-splide";
+
+
 
 
 const Index = () => {
@@ -20,7 +21,7 @@ const Index = () => {
     {id: 1 , title: "Creation" , img: ser1},
     {id: 2 , title: "Creation" , img: ser2},
     {id: 3 , title: "Creation" , img: ser3}, 
-  ]
+  ];
 
   const items = [
     "- Creative Direction",
@@ -181,18 +182,24 @@ const Index = () => {
                  drag: "free",
                  focus: "center",
                  autoWidth: true,
-                 arrow: false,
-                 pagination:false,
+                 arrows: false,
+                 pagination: false,
                  gap: "3rem",
-                 autoPlay:true,
+                 autoplay: true,
                  interval:0,
                  speed:100000,
-                 pauseOnHover:false,
-                 resetProgress:false
+                 pauseOnHover: false,
+                 resetProgress:false,
                }} >
                 {items.map((text,index)=>(
                   <SplideSlide key={index} >
-                    <div className='text-[10vw] font-bold uppercase whitespace-nowrap ' >
+                    <div className='text-[10vw] font-bold uppercase whitespace-nowrap'
+                    style={{
+                       color: "transparent",
+                       WebkitTextStroke: "2px #fff"
+                      
+                    }} >
+                      {text}
 
                     </div>
 
