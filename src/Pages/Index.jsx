@@ -10,6 +10,11 @@ import { Icon } from '@iconify/react'
 import "@splidejs/react-splide/css";
 import { Splide ,SplideSlide} from "@splidejs/react-splide";
 
+import project1 from "../assets/Images/project-01.jpg"
+import project2 from "../assets/Images/project-02.jpg"
+import project3 from "../assets/Images/project-03.jpg"
+import project4 from "../assets/Images/project-04.jpg"
+
 
 
 
@@ -28,6 +33,23 @@ const Index = () => {
     "- Machine Learning/AI",
     "- Brand Strategy",
     "- Native and Web Apps",
+  ]
+
+  const projects = [
+    {
+      id: 1,
+      image:project1,
+      category:"Branding",
+      title:"Museums Art Concept",
+
+    },
+    {
+      id: 2,
+      image:project2,
+      category:"Branding",
+      title:"Museums Art Concept",
+
+    },
   ]
   return (
     
@@ -212,12 +234,20 @@ const Index = () => {
         </div>
       </div>
       {/* Featured Projects */}
-      <div className='featured px-[2%] md:px-[8%] xl:px-[12%]'>
+      <div className='featured py-[8%] px-[2%] md:px-[8%] xl:px-[12%]'>
         <div className='featured-content w-full flex justify-between flex-col lg:flex-row lg:items-end mb-10 '>
           <div>
-            <span className='text-black bg-primary px-2 py-3 font-semibold text-md sm:text-xl rounded-sm'> Featured Projects  </span>
+            <span className='text-black bg-primary px-2 py-3 font-semibold text-md sm:text-xl rounded-sm'>Featured Projects</span>
+            <h2 className="text-2xl sm:text-6xl font-semibold sm:max-w-3xl mt-5 leading-tight text-white"> Studio Showcase 
+           </h2>
           </div>
+          <Link to="/projects" className='btn rounded-sm '>
+               <Icon icon="vaadin:plus" width="30" height="30"/>
+               <span> More Projects   </span>
+            </Link>
         </div>
+
+        <div className='grid grid-cols-1 xl:grid-cols-2 text-white gap-10 w-full lg:w-[90%] xl:w-full ' ></div>
       </div>
 
     </>
