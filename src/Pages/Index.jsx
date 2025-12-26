@@ -46,8 +46,22 @@ const Index = () => {
     {
       id: 2,
       image:project2,
+      category:"Markteing",
+      title:"Market Economy Graphics",
+
+    },
+    {
+      id: 3,
+      image:project3,
+      category:"Design",
+      title:"Headphones 3d Rendering ",
+
+    },
+    {
+      id: 4,
+      image:project4,
       category:"Branding",
-      title:"Museums Art Concept",
+      title:"Product Packing Style ",
 
     },
   ]
@@ -247,7 +261,24 @@ const Index = () => {
             </Link>
         </div>
 
-        <div className='grid grid-cols-1 xl:grid-cols-2 text-white gap-10 w-full lg:w-[90%] xl:w-full ' ></div>
+        <div className='grid grid-cols-1 xl:grid-cols-2 text-white gap-10 w-full lg:w-[90%] xl:w-full'>
+          {projects.map((item) =>(
+            <div key={item.id} className='border border-gray-300/20 p-5 cursor-pointer rounded-lg group'>
+              <div className='h-[550px] w-full rounded-lg overflow-hidden mb-5'>
+                <img 
+                src={item.image}
+                alt={item.title}
+                className='w-full h-full group-hover:scale-110 object-cover  transition-all duration-300 '
+                 />
+              </div>
+              <Link to={`/projects/${item.id}`}>
+                <span className='text-white border border-gray-50/20 px-2 py-1 font-semibold text-lg rounded-sm'>
+                 {item.category}
+                </span>
+              </Link>
+            </div>
+          ) )}
+        </div>
       </div>
 
     </>
