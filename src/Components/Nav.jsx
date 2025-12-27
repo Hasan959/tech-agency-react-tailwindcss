@@ -19,7 +19,7 @@ const Nav = () => {
 
   return (
     <>
-        <div  className={`navabar h-[90px] mx-auto  flex justify-between items-center px-[2%] md:px-[8%] xl:px-[12%] fixed top-0 left-0 right-0 z-50 transition-all duration-500 
+        <div  className={`navabar h-[90px]  mx-auto  flex justify-between items-center px-[2%] md:px-[8%] xl:px-[12%] fixed top-0 left-0 right-0 z-50 transition-all duration-500 
           ${navBg ? "bg-white shadow-lg text-black" : "bg-transparent text-white"}`} >
             <Link to="/" className={`logo text-4xl font-semibold transition-all duration-500
                ${navBg ? "text-black" : "text-white"}`}>

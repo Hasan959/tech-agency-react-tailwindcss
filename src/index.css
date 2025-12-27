@@ -315,3 +315,25 @@ body{
     animation: bubbleThree 2s cubic-bezier(.3,0,.3,1) forwards;
 }
 
+.team-item:after{
+    content: '';
+    position:absolute;
+    left: 50%;
+    top: 50%;
+    width: 900px;
+    height: 900px;
+    scale: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: -450px 0px 0px -450px;
+    border-radius: 50%;
+    background-color: var(--color-primary);
+    transition: .3s ease-in-out ;
+    z-index: -1;
+}
+
+.team-item:hover::after{
+    scale: 1;
+}
+

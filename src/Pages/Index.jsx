@@ -15,6 +15,11 @@ import project2 from "../assets/Images/project-02.jpg"
 import project3 from "../assets/Images/project-03.jpg"
 import project4 from "../assets/Images/project-04.jpg"
 
+import team1 from "../assets/Images/team-01.png"
+import team2 from "../assets/Images/team-02.png"
+import team3 from "../assets/Images/team-03.png"
+import team4 from "../assets/Images/team-04.png"
+
 
 
 
@@ -64,7 +69,40 @@ const Index = () => {
       title:"Product Packing Style ",
 
     },
-  ]
+    
+  ];
+   const members = [
+    {
+      id:1,
+      name: "Arrav Rao",
+      role: "UI/UX Designer",
+      img: team1,
+      letter:"A",
+    },
+    {
+      id:2,
+      name: "Diya Mehra ",
+      role: "Digital Marketer",
+      img: team2,
+      letter:"D",
+    },
+    {
+      id:3,
+      name: "Karan Thakor",
+      role: "Digital Marketer",
+      img: team2,
+      letter:"k",
+    },
+    {
+      id:4,
+      name: "Sara Thomas ",
+      role: "Content Strategist ",
+      img: team4,
+      letter:"S",
+    },
+
+   ];
+
   return (
     
     <>
@@ -255,7 +293,7 @@ const Index = () => {
             <h2 className="text-2xl sm:text-6xl font-semibold sm:max-w-3xl mt-5 leading-tight text-white"> Studio Showcase 
            </h2>
           </div>
-          <Link to="/projects" className='btn rounded-sm '>
+          <Link to="/projects" className='btn rounded-sm w-fit '>
                <Icon icon="vaadin:plus" width="30" height="30"/>
                <span> More Projects   </span>
             </Link>
@@ -275,9 +313,41 @@ const Index = () => {
                 <span className='text-white border border-gray-50/20 px-2 py-1 font-semibold text-lg rounded-sm'>
                  {item.category}
                 </span>
+                <h3 className='text-2xl sm:text-4xl font-semibold mt-2 hover:text-primary transition-all duration-300'>
+                  {item.title}
+                </h3>
               </Link>
             </div>
           ) )}
+        </div>
+      </div>
+      {/* Team */}
+      <div className=' team py-[8%] px-[2%] md:px-[8%] xl:px-[12%]'>
+        <div className='team-content w-full lg:w-[60%]  mb-10 '>
+          <div>
+            <span className='text-black bg-primary px-2 py-3 font-semibold text-md sm:text-xl rounded-sm'>Expert Team Member  </span>
+            <h2 className="text-2xl sm:text-6xl font-semibold sm:max-w-3xl mt-5 leading-tight text-white"> 
+             We do awesome service for our clients.
+           </h2>
+          </div>
+
+          <div className="team-wrapper grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4">
+            {members.map((member) =>(
+              <div key={member.id} className=' team-item relative overflow-hidden border border-gray-50/20 h-[600px] md:h-[740px] group  flex flex-col justify-between   text-white'>
+                {/* Description */}
+                <div className='desc p-6 md:p-8'>
+                  <div className='mb-4'>
+                    <span className='block text-3xl md:text-5xl group-hover:text-black font-bold leading-tight transition-colors duration-300'>
+                      {member.name}
+                    </span>
+
+                  </div>
+                </div>
+
+              </div>
+            ) )}
+
+          </div>
         </div>
       </div>
 
