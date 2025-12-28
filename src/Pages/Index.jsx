@@ -333,15 +333,46 @@ const Index = () => {
 
           <div className="team-wrapper grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4">
             {members.map((member) =>(
-              <div key={member.id} className=' team-item relative overflow-hidden border border-gray-50/20 h-[600px] md:h-[740px] group  flex flex-col justify-between   text-white'>
+              <div key={member.id} className=' team-item relative overflow-hidden border border-gray-50/20 h-[600px] md:h-[740px] group  flex flex-col justify-between  text-white cursor-pointer '>
                 {/* Description */}
                 <div className='desc p-6 md:p-8'>
                   <div className='mb-4'>
-                    <span className='block text-3xl md:text-5xl group-hover:text-black font-bold leading-tight transition-colors duration-300'>
+                    <span className='block font-semibold text-gray-100 text-sm md:text-md  group-hover:text-black  transition-colors duration-300'>
                       {member.name}
                     </span>
-
+                    <span className='block font-semibold text-gray-100 text-sm md:text-md  group-hover:text-black  transition-colors duration-300'>
+                      {member.role}
+                    </span>
                   </div>
+                  {/* Social Links */}
+                  <div className='flex gap-3 ' >
+                   <Link 
+                     to="#"
+                      className='border border-gray-50/20 p-3 md:p-5 rounded-full group-hover:border-black transition-colors'
+                      >
+                        <Icon
+                            icon="ri:facebook-fill"
+                            width="24"
+                            height="24"
+                            className='group-hover:text-black transition-transform duration-300
+                            group-hover:scale-110 '
+                        />
+
+                       </Link>
+                       <Link 
+                     to="#"
+                      className='border border-gray-50/20 p-3 md:p-5 rounded-full group-hover:border-black transition-colors'
+                      >
+                        <Icon
+                            icon="flowbite:linkedin-solid"
+                            width="24"
+                            height="24"
+                            className='group-hover:text-black transition-transform duration-300
+                            group-hover:scale-110 '
+                        />
+
+                       </Link>
+                      </div>
                 </div>
 
               </div>
