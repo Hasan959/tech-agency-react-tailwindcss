@@ -90,7 +90,7 @@ const Index = () => {
       id:3,
       name: "Karan Thakor",
       role: "Digital Marketer",
-      img: team2,
+      img: team3,
       letter:"k",
     },
     {
@@ -330,12 +330,13 @@ const Index = () => {
              We do awesome service for our clients.
            </h2>
           </div>
+          </div>
 
-          <div className="team-wrapper grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4">
+          <div className="team-wrapper  grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4">
             {members.map((member) =>(
               <div key={member.id} className=' team-item relative overflow-hidden border border-gray-50/20 h-[600px] md:h-[740px] group  flex flex-col justify-between  text-white cursor-pointer '>
                 {/* Description */}
-                <div className='desc p-6 md:p-8'>
+                <div className='desc  p-6 md:p-8'>
                   <div className='mb-4'>
                     <span className='block font-semibold text-gray-100 text-sm md:text-md  group-hover:text-black  transition-colors duration-300'>
                       {member.name}
@@ -373,14 +374,45 @@ const Index = () => {
 
                        </Link>
                       </div>
+
+                      
                 </div>
+                 {/* Image + letter  */}
+                 <img 
+                 src={member.img}
+                 alt={member.name}
+                  className='w-full h-auto scale-100 grayscale  group-hover:scale-110 group-hover:grayscale-0
+                   transition-all duration-500 ease-[cubic-bezier(0.3,0,0.3,1)] '
+                   />
+
+                   <div className='num absolute -right-3 md:-right-5 bottom-0 text-[180px] sm:text-[220px] md:text-[300px] font-bold leading-[0.5] group-hover:text-primary pointer-events-none transition-all duration-500 
+                   ease-[cubic-bezier(0.3,0,0.3,1)]'
+                    style={{
+                      textShadow:
+                      "12px 1px 0 #000, -1px 1px 0 #000, 1px -1px 0 #000, -1px -1px 0 #000"
+                    }}
+                   >
+                    <span> {member.letter} </span>
+                    
+                   </div>
 
               </div>
             ) )}
 
           </div>
         </div>
-      </div>
+
+        {/* Testimonial */}
+        <div className=' Testimonials py-[8%] px-[2%] md:px-[8%] xl:px-[12%] flex flex-col lg:flex-row justify-between items-start gap-10 '>
+        <div className='tst-content w-full lg:w-1/2  text-white '>
+            <h2 className="text-3xl sm:text-6xl font-semibold sm:max-w-3xl my-5 leading-tight text-white"> 
+             Testimonials
+           </h2>
+          </div>
+         
+        </div>
+
+      
 
     </>
   )
