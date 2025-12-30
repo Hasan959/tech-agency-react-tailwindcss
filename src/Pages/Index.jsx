@@ -103,6 +103,36 @@ const Index = () => {
 
    ];
 
+   const testimonials = [
+    {
+      id:1,
+      text: "Their high level of customer service complemented their techical experise,they were responsive,supportive and communicative. Their dedication to the project was impressive",
+      name: "jessica  Brown",
+      role: "Design Quality",
+      rating: 4.5, 
+    },
+    {
+      id:2,
+      text: "Their high level of customer service complemented their techical experise,they were responsive,supportive and communicative. Their dedication to the project was impressive  ",
+      name: "Rohan Metha ",
+      role: "Creative Director",
+      rating: 4.5, 
+    },
+    {
+      id:3,
+      text: "Their high level of customer service complemented their techical experise,they were responsive,supportive and communicative. Their dedication to the project was impressive  ",
+      name: "Emily devis ",
+      role: "Creative Director",
+      rating: 4.5, 
+    },{
+      id:4,
+      text: "Their high level of customer service complemented their techical experise,they were responsive,supportive and communicative. Their dedication to the project was impressive  ",
+      name: "Arjun Patel ",
+      role: "Startup founder",
+      rating: 4, 
+    }
+   ];
+
   return (
     
     <>
@@ -408,6 +438,46 @@ const Index = () => {
             <h2 className="text-3xl sm:text-6xl font-semibold sm:max-w-3xl my-5 leading-tight text-white"> 
              Testimonials
            </h2>
+           <div className='font-normal text-xl flex items-center'>
+            4.5{" "}
+            <span className='flex text-yellow-400 ml-2' >
+              <Icon icon="material-symbols:star-rounded" width="24" height="24" />
+              <Icon icon="material-symbols:star-rounded" width="24" height="24" />
+              <Icon icon="material-symbols:star-rounded" width="24" height="24" />
+              <Icon icon="material-symbols:star-rounded" width="24" height="24" />
+              <Icon icon="ic:round-star-half" width="24" height="24" />
+            </span>{" "}
+                rating from all my clients
+           </div>
+          </div>
+          <div className="w-full lg:w-1/2  border-l border-white ps-10 ">
+            <Splide 
+                options={{
+                   type:"fade",
+                   rewind: true,
+                   autoPlay:true,
+                   interval:4000,
+                   pauseOnHover:true,
+                   arrows:false,
+                   pagination: false,
+                   speed:800,
+                }}
+                >
+                  {testimonials.map((t) =>
+                   <SplideSlide key={t.id}>
+                    <div className='text-white'>
+                      <p className='text-white text-2xl md:text-3xl max-w-2xl leading-tight mb-6 font-medium'>
+                        {t.text}
+                      </p>
+                      <div>
+                        <h3 className=''></h3>
+                      </div>
+                    </div>
+
+                   </SplideSlide>
+                   )}
+
+            </Splide>
           </div>
          
         </div>
