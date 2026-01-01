@@ -20,6 +20,8 @@ import team2 from "../assets/Images/team-02.png"
 import team3 from "../assets/Images/team-03.png"
 import team4 from "../assets/Images/team-04.png"
 
+import CountUp from 'react-countup'
+
 
 
 
@@ -487,7 +489,12 @@ const Index = () => {
         {/* Counts */}
         <div className='grid grid-cols-1 py-[8%] sm:grid-cols-3 gap-12 px-[2%] md:px-[8%] xl:px-[12%]'>
           <div className='text-center' >
-            <h2 className='text-7xl sm:text-8xl font-bold leading-none color:transparent; -webkit-text-stroke:2px rgb(255,255,255) ' >
+            <h2 className='text-7xl sm:text-8xl font-bold leading-none color:transparent; -webkit-text-stroke:2px rgb(255,255,255)'
+            style={{
+               WebkitTextStroke: "2px white"
+            }}
+            >
+            <CountUp/>
 
             </h2>
           </div>
