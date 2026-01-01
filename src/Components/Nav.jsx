@@ -11,11 +11,18 @@ const Nav = () => {
       setOpenDropdown(openDropdown === name ? "" : name)
      }
 
-     useEffect(()=> {
-      const  handleScroll = () => {
-        setNavBg(window.scrollY > 100)
-      }
-     },[]);
+
+      useEffect(() => {
+    const handleScroll = () => {
+      setNavBg(window.scrollY > 100)
+    }
+
+    window.addEventListener("scroll", handleScroll)
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll)
+    }
+  }, [])
 
   return (
     <>

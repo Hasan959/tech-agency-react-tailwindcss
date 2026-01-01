@@ -489,14 +489,43 @@ const Index = () => {
         {/* Counts */}
         <div className='grid grid-cols-1 py-[8%] sm:grid-cols-3 gap-12 px-[2%] md:px-[8%] xl:px-[12%]'>
           <div className='text-center' >
+            <h2 className='text-7xl sm:text-8xl font-bold leading-none color:transparent'
+            style={{
+               WebkitTextStroke: "2px white"
+            }}
+            >
+            <CountUp start={0} end={23}  duration={2} />
+
+            </h2>
+            <p className='text-gray-300 text-lg font-semibold mt-3'>
+              Team Members 
+            </p>
+          </div>
+          <div className='text-center' >
             <h2 className='text-7xl sm:text-8xl font-bold leading-none color:transparent; -webkit-text-stroke:2px rgb(255,255,255)'
             style={{
                WebkitTextStroke: "2px white"
             }}
             >
-            <CountUp/>
+            <CountUp start={0} end={99}  duration={2.5} />+
 
             </h2>
+            <p className='text-gray-300 text-lg font-semibold mt-3'>
+              Completed project 
+            </p>
+          </div>
+          <div className='text-center' >
+            <h2 className='text-7xl sm:text-8xl font-bold leading-none color:transparent; -webkit-text-stroke:2px rgb(255,255,255)'
+            style={{
+               WebkitTextStroke: "2px white"
+            }}
+            >
+            <CountUp start={0} end={12}  duration={2.8} />M
+
+            </h2>
+            <p className='text-gray-300 text-lg font-semibold mt-3'>
+              Lines of code 
+            </p>
           </div>
 
         </div>
