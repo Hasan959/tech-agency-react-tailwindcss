@@ -529,6 +529,9 @@ const Index = () => {
           </div>
 
         </div>
+        {/* Get in Touch */}
+        {/* Get in Touch */}
+        {/* Get in Touch */}
 
       
 
