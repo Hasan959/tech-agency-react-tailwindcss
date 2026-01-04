@@ -356,13 +356,11 @@ const Index = () => {
       {/* Team */}
       <div className=' team py-[8%] px-[2%] md:px-[8%] xl:px-[12%]'>
         <div className='team-content w-full lg:w-[60%]  mb-10 '>
-          <div>
             <span className='text-black bg-primary px-2 py-3 font-semibold text-md sm:text-xl rounded-sm'>Expert Team Member  </span>
             <h2 className="text-2xl sm:text-6xl font-semibold sm:max-w-3xl mt-5 leading-tight text-white"> 
              We do awesome service for our clients.
            </h2>
-          </div>
-          </div>
+        </div>
 
           <div className="team-wrapper  grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4">
             {members.map((member) =>(
@@ -530,8 +528,17 @@ const Index = () => {
 
         </div>
         {/* Get in Touch */}
-        {/* Get in Touch */}
-        {/* Get in Touch */}
+        <div className='py-[8%]'>
+          <div className='contact py-[8%] px-[2%] md:px-[8%] xl:px-[12%] h-[800px] relative ' >
+            <div className='team-content w-full lg:w-[60%]  mb-10 '>
+            <span className='text-black bg-primary px-2 py-3 font-semibold text-md sm:text-xl    rounded-sm'>Expert Team Member  </span>
+            <h2 className="text-2xl sm:text-6xl font-semibold sm:max-w-3xl mt-5 leading-tight text-white"> 
+             We do awesome service for our clients.
+           </h2>
+        </div>
+          </div>
+
+        </div>
 
       
 
