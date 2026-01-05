@@ -531,9 +531,9 @@ const Index = () => {
         <div className='py-[8%]'>
           <div className='contact py-[8%] px-[2%] md:px-[8%] xl:px-[12%] h-[800px] relative ' >
             <div className='team-content w-full lg:w-[60%]  mb-10 '>
-            <span className='text-black bg-primary px-2 py-3 font-semibold text-md sm:text-xl    rounded-sm'>Expert Team Member  </span>
+            <span className='text-black bg-primary px-2 py-3 font-semibold text-md sm:text-xl    rounded-sm'>Get in Touch   </span>
             <h2 className="text-2xl sm:text-6xl font-semibold sm:max-w-3xl mt-5 leading-tight text-white"> 
-             We do awesome service for our clients.
+             Send us your  bright ideas
            </h2>
         </div>
           </div>
