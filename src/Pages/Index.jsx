@@ -533,9 +533,18 @@ const Index = () => {
             <div className='team-content w-full lg:w-[60%]  mb-10 '>
             <span className='text-black bg-primary px-2 py-3 font-semibold text-md sm:text-xl    rounded-sm'>Get in Touch   </span>
             <h2 className="text-2xl sm:text-6xl font-semibold sm:max-w-3xl mt-5 leading-tight text-white"> 
-             Send us your  bright ideas
+                 Send us your  bright ideas
            </h2>
-        </div>
+            <Link to="/contact" className='text-primary text-3xl lg:text-5xl font-semibold '>
+             info@yourcompany
+            </Link>
+            <p className='text-gray-100 text-xl pt-5' > 123 Business avenue Los angeles,CA 90001 </p>
+            </div>
+            <div className='contact-image'>
+              <div className='cat-img-circle img-circle--1  '></div>
+              <div className='cat-img-circle img-circle--2'></div>
+              <div className='cat-img-circle img-circle--3'></div>
+            </div>
           </div>
 
         </div>
