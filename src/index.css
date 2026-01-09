@@ -414,3 +414,29 @@ body{
     transition: all .4s cubic-bezier(.3,0,.3,1) ;
 }
 
+.social-icon:hover:after{
+    height: 100%;
+    top: 0;
+    bottom: auto;
+}
+
+.social-icon:hover span{
+    color: #000;
+}
+
+.social-icon svg{
+    margin: 0 10px 0 -10px;
+    transform: scale(0.87);
+    transition: all .4s cubic-bezier(.3,0,.3,1);
+    z-index: 2;
+
+}
+.social-icon:hover svg{
+    background-color: #000;
+    color: white;
+}
+
+.social-icon:hover svg{
+    transform: scale(1);
+}
+
