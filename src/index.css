@@ -422,6 +422,7 @@ body{
 
 .social-icon:hover span{
     color: #000;
+    z-index:9 ;
 }
 
 .social-icon svg{

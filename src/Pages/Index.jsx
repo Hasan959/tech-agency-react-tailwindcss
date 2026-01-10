@@ -551,7 +551,13 @@ const Index = () => {
                    <Icon icon="ri:facebook-fill" width="44" height="44" className='text-black bg-white p-2 rounded-full ' />
                    <span> Facebook </span>
                   </Link>
+                </li>
 
+                <li>
+                  <Link to='/' className='social-icon relative overflow-hidden p-10 text-xl font-bold h-[100px] rounded-full bg-black flex gap-8 items-center'>
+                   <Icon icon="iconoir:instagram" width="44" height="44" className='text-black bg-white p-2 rounded-full ' />
+                   <span> Instagram </span>
+                  </Link>
                 </li>
 
               </ul>
