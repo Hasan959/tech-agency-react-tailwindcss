@@ -560,11 +560,36 @@ const Index = () => {
                   </Link>
                 </li>
 
+                <li>
+                  <Link to='/' className='social-icon relative overflow-hidden p-10 text-xl font-bold h-[100px] rounded-full bg-black flex gap-8 items-center'>
+                   <Icon icon="iconoir:twitter" width="44" height="44" className='text-black bg-white p-2 rounded-full ' />
+                   <span> Twitter </span>
+                  </Link>
+                </li>
+
+                <li>
+                  <Link to='/' className='social-icon relative overflow-hidden p-10 text-xl font-bold h-[100px] rounded-full bg-black flex gap-8 items-center'>
+                   <Icon icon="iconoir:twitter" width="44" height="44" className='text-black bg-white p-2 rounded-full ' />
+                   <span> Linkdln</span>
+                  </Link>
+                </li>
+
               </ul>
 
             </div>
           </div>
 
+        </div>
+        {/* Blog*/}
+        <div className=' blog py-[8%] px-[2%] md:px-[8%] xl:px-[12%]'>
+        <div className='blog-content w-full lg:w-[60%]  mb-10 '>
+            <span className='text-black bg-primary px-2 py-3 font-semibold text-md sm:text-xl rounded-sm'>News & Blog  </span>
+            <h2 className="text-2xl sm:text-6xl font-semibold sm:max-w-3xl mt-5 leading-tight text-white"> 
+             Insights, Thoughts,Indsuty Trends,Markteing Tips .
+           </h2>
+        </div>
+
+           
         </div>
 
       
