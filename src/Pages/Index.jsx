@@ -654,6 +654,17 @@ const Index = () => {
            
         </div>
 
+        {/* Brand */}
+        <div className=' brand py-[8%] px-[2%] md:px-[8%] xl:px-[12%]'>
+          <div className='brand-content w-full lg:w-[60%]  mb-10 '>
+            <span className='text-black bg-primary px-2 py-3 font-semibold text-md sm:text-xl rounded-sm'>Fantasthik & Premie  client  </span>
+            <h2 className="text-4xl md:text-3xl  lg:text-6xl font-semibold sm:max-w-5xl mt-5 leading-tight text-white"> 
+             Insights, Thoughts,Indsuty Trends,Markteing Tips .
+           </h2>
+        </div>
+
+        </div>
+
       
 
     </>
