@@ -22,6 +22,10 @@ import team4 from "../assets/Images/team-04.png"
 
 import CountUp from 'react-countup'
 
+import blog1 from "../assets/Images/blog_01.jpg"
+import blog2 from "../assets/Images/blog_02.jpg"
+import blog3 from "../assets/Images/blog_03.jpg"
+
 
 
 
@@ -134,6 +138,33 @@ const Index = () => {
       rating: 4, 
     }
    ];
+   const blogs = [
+    {
+      id: 1,
+      date:'April 10, 2025',
+      category:"Art",
+      title:"Play to your strength and supercharge your business ",
+      description:"Ambletion: Behind the branding",
+      image:blog1,
+    },
+    {
+      id: 2,
+      date:'May 10, 2025',
+      category:"Art",
+      title:"Play to your strength and supercharge your business ",
+      description:"Ambletion: Behind the branding",
+      image:blog2,
+    },
+    {
+      id: 3,
+      date:'June 10, 2025',
+      category:"Art",
+      title:"Play to your strength and supercharge your business ",
+      description:"Ambletion: Behind the branding",
+      image:blog3,
+    }
+   ];
+
 
   return (
     
@@ -584,9 +615,40 @@ const Index = () => {
         <div className=' blog py-[8%] px-[2%] md:px-[8%] xl:px-[12%]'>
         <div className='blog-content w-full lg:w-[60%]  mb-10 '>
             <span className='text-black bg-primary px-2 py-3 font-semibold text-md sm:text-xl rounded-sm'>News & Blog  </span>
-            <h2 className="text-2xl sm:text-6xl font-semibold sm:max-w-3xl mt-5 leading-tight text-white"> 
+            <h2 className="text-4xl md:text-3xl  lg:text-6xl font-semibold sm:max-w-5xl mt-5 leading-tight text-white"> 
              Insights, Thoughts,Indsuty Trends,Markteing Tips .
            </h2>
+        </div>
+
+        <div className="blog-wrapper  grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-10 ">
+          {blogs.map((blog)=>(
+              <div key={blog.id} className='blog-item group flex-col text-white  '>
+
+                <div className='blog-image overflow-hidden rounded-lg ' >
+                <img 
+                src={blog.image}
+                alt={blog.title} 
+                className='group-hover:scale-110 transition-all duration-300 '
+                />
+                </div>
+
+                <div className='blog-content pt-5'>
+                  <p className='text-lg font-semibold pb-2'>
+                    <span className='bg-lime-300 text-black px-3 py-1 rounded-full me-3 '>
+                      {blog.date}
+                    </span>
+
+                    {blog.category}
+                  </p>
+                  <Link to={`/blog/${blog.id}`} className='text-xl font-semibold hover:text-lime-300 transition-all ' >
+                  {blog.title}
+                  </Link>
+                  <p className='text-md text-gray-300 mt-3'> {blog.description} </p>
+                </div>
+
+              </div>
+  
+          ))}
         </div>
 
            
