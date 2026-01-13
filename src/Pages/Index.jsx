@@ -26,6 +26,14 @@ import blog1 from "../assets/Images/blog_01.jpg"
 import blog2 from "../assets/Images/blog_02.jpg"
 import blog3 from "../assets/Images/blog_03.jpg"
 
+import brand1 from "../assets/Images/brand1.png"
+import brand2 from "../assets/Images/brand2.png"
+import brand3 from "../assets/Images/brand3.png"
+import brand4 from "../assets/Images/brand4.png"
+import brand5 from "../assets/Images/brand5.png"
+import brand6 from "../assets/Images/brand6.png"
+import brand7 from "../assets/Images/brand7.png"
+
 
 
 
@@ -656,12 +664,19 @@ const Index = () => {
 
         {/* Brand */}
         <div className=' brand py-[8%] px-[2%] md:px-[8%] xl:px-[12%]'>
-          <div className='brand-content w-full lg:w-[60%]  mb-10 '>
-            <span className='text-black bg-primary px-2 py-3 font-semibold text-md sm:text-xl rounded-sm'>Fantasthik & Premie  client  </span>
-            <h2 className="text-4xl md:text-3xl  lg:text-6xl font-semibold sm:max-w-5xl mt-5 leading-tight text-white"> 
-             Insights, Thoughts,Indsuty Trends,Markteing Tips .
-           </h2>
-        </div>
+            <div className='brand-content w-full lg:w-[60%]  mb-10 '>
+               <span className='text-black bg-primary px-2 py-3 font-semibold text-md sm:text-xl rounded-sm'>Fantasthik & Premie  client  </span>
+               <h2 className="text-4xl md:text-3xl  lg:text-6xl font-semibold sm:max-w-5xl mt-5   leading-tight text-white"> 
+               We Have Had the Pleasure of Working with some Clients 
+              </h2>
+           </div>
+           <div className="brand-wrapper grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
+            <Link to="https://www.google.com/" target="blank" className='brand-item cursor-pointer border border-gray-50/20 p-5 relative flex justify-center items-center ' >
+              <img src={brand1} alt="brand-image" className='object-contain' />
+              <span className='text-white' > View Website  </span>
+
+            </Link>
+           </div>
 
         </div>
 
