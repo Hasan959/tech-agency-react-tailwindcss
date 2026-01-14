@@ -674,7 +674,41 @@ const Index = () => {
             <Link to="https://www.google.com/" target="blank" className='brand-item cursor-pointer border border-gray-50/20 p-5 relative flex justify-center items-center ' >
               <img src={brand1} alt="brand-image" className='object-contain' />
               <span className='text-white' > View Website  </span>
+            </Link>
 
+            <Link to="https://www.google.com/" target="blank" className='brand-item cursor-pointer border border-gray-50/20 p-5 relative flex justify-center items-center ' >
+              <img src={brand2} alt="brand-image" className='object-contain' />
+              <span className='text-white' > View Website  </span>
+            </Link>
+
+            <Link to="https://www.google.com/" target="blank" className='brand-item cursor-pointer border border-gray-50/20 p-5 relative flex justify-center items-center ' >
+              <img src={brand3} alt="brand-image" className='object-contain' />
+              <span className='text-white' > View Website  </span>
+            </Link>
+            
+            <Link to="https://www.google.com/" target="blank" className='brand-item cursor-pointer border border-gray-50/20 p-5 relative flex justify-center items-center ' >
+              <img src={brand4} alt="brand-image" className='object-contain' />
+              <span className='text-white' > View Website  </span>
+            </Link>
+
+            <Link to="https://www.google.com/" target="blank" className='brand-item cursor-pointer border border-gray-50/20 p-5 relative flex justify-center items-center ' >
+              <img src={brand5} alt="brand-image" className='object-contain' />
+              <span className='text-white' > View Website  </span>
+            </Link>
+
+            <Link to="https://www.google.com/" target="blank" className='brand-item cursor-pointer border border-gray-50/20 p-5 relative flex justify-center items-center ' >
+              <img src={brand6} alt="brand-image" className='object-contain' />
+              <span className='text-white' > View Website  </span>
+            </Link>
+
+            <Link to="https://www.google.com/" target="blank" className='brand-item cursor-pointer border border-gray-50/20 p-5 relative flex justify-center items-center ' >
+              <img src={brand7} alt="brand-image" className='object-contain' />
+              <span className='text-white' > View Website  </span>
+            </Link>
+
+            <Link to="https://www.google.com/" target="blank" className='brand-item cursor-pointer border border-gray-50/20 p-5 relative flex justify-center items-center ' >
+              <img src={brand2} alt="brand-image" className='object-contain' />
+              <span className='text-white' > View Website  </span>
             </Link>
            </div>
 
