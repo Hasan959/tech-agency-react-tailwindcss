@@ -41,11 +41,15 @@ const Footer = () => {
                 <img
                 key={index} 
                 src={img} 
-                alt="" />
+                alt={`gallery-${index}`}
+                className='rounded w-[90px] h-[70px] object-cover  '
+                 
+                />
 
             ) )}
            </div>
         </div>
+         <hr className='border-gray-700 mb-6' />
        </div>
     </footer>
   )
