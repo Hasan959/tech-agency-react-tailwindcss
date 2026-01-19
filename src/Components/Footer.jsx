@@ -50,8 +50,12 @@ const Footer = () => {
            </div>
         </div>
          <hr className='border-gray-700 mb-6' />
+         
        </div>
+       {/* footer  end */}
+       
     </footer>
+    
   )
 }
 
