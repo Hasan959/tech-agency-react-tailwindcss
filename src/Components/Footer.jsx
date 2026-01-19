@@ -53,12 +53,8 @@ const Footer = () => {
          <hr className='border-gray-700 mb-6' />
          
        </div>
-<<<<<<< HEAD
        {/* footer  end */}
        
-=======
-      
->>>>>>> f486a0177e268bd7a54f946a051789f31eb39615
     </footer>
     
   )
