@@ -564,8 +564,8 @@ const Index = () => {
               Lines of code 
             </p>
           </div>
-
         </div>
+        
         {/* Get in Touch */}
         <div className='py-[8%]'>
           <div className='contact py-[8%] px-[2%] md:px-[8%] xl:px-[12%] h-[800px] relative ' >
