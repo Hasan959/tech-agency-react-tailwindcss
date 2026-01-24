@@ -5,6 +5,7 @@ import { Icon } from '@iconify/react'
 import aboutlogo from "../assets/Images/novo-about-logo.png"
 import CountUp from 'react-countup'
 
+
 const About = () => {
   return (
     <>
@@ -131,6 +132,12 @@ const About = () => {
 
                   </text>
                </svg>
+               <div className='border border-white rounded-[50%]'>
+                <div className='rounded-full p-6 flex items-center justify-center'>
+                  <Icon icon="ri:play-fill" width="70" height="70"
+                   className='text-white' />
+                </div>
+               </div>
               </div>
             </div>
           </div>
