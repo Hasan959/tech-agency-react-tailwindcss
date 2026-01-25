@@ -105,16 +105,17 @@ const About = () => {
         <div className='w-full py-[8%] px-[2%] md:px-[8%] xl:px-[12%]'>
           <div className='banner bg-cover object-bottom bg-center h-[800px] relative'>
             <div className=' absolute top-0 left-0 h-full w-full flex justify-center items-center z-10'>
-              <div className="flex items-center w-[250px] h-[250px] relative border border-white rounded-full ">
-                <svg viewBox='0 0 300 300 '
-                 className=' absolute w-full h-full animate-[spin_20s_linear_infinite]' 
-                 >
+              <div className="flex items-center justify-center w-[250px] h-[250px] relative border border-white rounded-full ">
+                <svg
+                  viewBox='0 0 300 300'
+                   className=' absolute w-full h-full animate-[spin_20s_linear_infinite] 
+                   '>
                   <defs>
-                    <path
-                         id='circlePath'
-                         d='M150,150,m-120,0,a120 0 1, 1 240, 0 a120, 120 0 1, 1 -240,0'
-                    />
-                  </defs>
+                      <path 
+                           id='circlePath'
+                            d='M150 150 m-120  0 a120 120 0 1 1 240 0 a120 120 0 1 1 -240 0'/>
+
+                    </defs>
 
                   <text 
                     fill='#fff'
@@ -140,6 +141,30 @@ const About = () => {
                </div>
               </div>
             </div>
+          </div>
+          <ul className='flex flex-col gap-5 mt-20 relative ' >
+          <li className='w-full flex items-start justify-between lg:flex-row flex-col'>
+            <span className='w-full lg:w-3xl font-semibold text-2xl text-white'> 
+              Our Mission 
+            </span>
+            <p className='w-full lg:w-[90%] xl:w-[80%] text-md sm:text-xl mt-2 text-gray-300'>
+              Frommm the moment our company was founded,we have helped our  client find exceptional solutions for their business,creating memorable brands and digital product
+            </p>
+          </li>
+          <li className='w-full flex items-start justify-between lg:flex-row flex-col'>
+            <span className='w-full lg:w-3xl font-semibold text-2xl text-white'> 
+              Our Goal 
+            </span>
+            <p className='w-full lg:w-[90%] xl:w-[80%] text-md sm:text-xl my-2 text-gray-300'>
+              From the moment our company was founded,we have helped our  client find exceptional solutions for their business,creating memorable brands and digital product
+            </p>
+          </li>
+          </ul>
+        </div>
+
+        <div className='service py-[2%] md:px-[8%] xl:px-[12%]'>
+          <div className='service-content'>
+
           </div>
         </div>
 
