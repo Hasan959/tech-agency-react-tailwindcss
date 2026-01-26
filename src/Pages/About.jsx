@@ -164,8 +164,23 @@ const About = () => {
 
         <div className='service py-[2%] md:px-[8%] xl:px-[12%]'>
           <div className='service-content'>
-
+            <span className='text-black bg-primary px-2 py-3 font-semibold text-md sm:text-xl rounded-sm'> what we do  </span>
+                <h2 className="text-2xl sm:text-6xl font-semibold max-w-3xl mt-5 leading-tight text-white"> We are a full service agency 
+                </h2>
           </div>
+          <div  className='flex flex-col w-full mt-8'>
+             <div className='service-item w-full flex justify-between items-center border-t border-white/20 border-b py-4 gap-5 flex-col-reverse lg:flex-row'>
+               <div className='flex lg:items-start flex-col md:flex-row gap-5 md:gap-8 w-full text-white lg:w-1/2'>
+                   <span className='text-2xl font-semibold'>0.1</span>
+                   <div className='service-info'>
+                    <h4 className='text-2xl font-semibold pb-0.5'>Brand Strategy </h4>
+                    <p className='text-gray-100 text-lg lg:w-3xl' > Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, aliquam explicabo obcaecati quos, ipsam velit optio itaque tempora corporis quas qui? Iste nisi recusandae maiores fugit voluptate totam voluptatem amet! </p>
+                   </div>
+               </div>
+             </div>
+          </div>
+
+
         </div>
 
     </>
