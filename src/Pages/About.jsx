@@ -4,6 +4,11 @@ import { Link } from 'react-router'
 import { Icon } from '@iconify/react'
 import aboutlogo from "../assets/Images/novo-about-logo.png"
 import CountUp from 'react-countup'
+import service1 from "../assets/Images/service-icon1.png"
+import service2 from "../assets/Images/service-icon2.png"
+import service3 from "../assets/Images/service-icon3.png"
+import service4 from "../assets/Images/service-icon4.png"
+import service5 from "../assets/Images/service-icon5.png"
 
 
 const About = () => {
@@ -174,9 +179,12 @@ const About = () => {
                    <span className='text-2xl font-semibold'>0.1</span>
                    <div className='service-info'>
                     <h4 className='text-2xl font-semibold pb-0.5'>Brand Strategy </h4>
-                    <p className='text-gray-100 text-lg lg:w-3xl' > Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, aliquam explicabo obcaecati quos, ipsam velit optio itaque tempora corporis quas qui? Iste nisi recusandae maiores fugit voluptate totam voluptatem amet! </p>
+                    <p className='text-gray-100 text-lg lg:w-3xl' > Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, aliquam explicabo obcaecati quos, ipsam velit optio itaque tempora corporis quas qui? Iste nisi recusandae maiores fugit voluptate totam voluptatem amet! 
+
+                    </p>
                    </div>
                </div>
+                 <div className='service-image w-full lg:w-1/2 flex lg:justify-end' ></div>
              </div>
           </div>
 
