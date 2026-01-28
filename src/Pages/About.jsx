@@ -4,11 +4,11 @@ import { Link } from 'react-router'
 import { Icon } from '@iconify/react'
 import aboutlogo from "../assets/Images/novo-about-logo.png"
 import CountUp from 'react-countup'
-import service1 from "../assets/Images/service-icon1.png"
-import service2 from "../assets/Images/service-icon2.png"
-import service3 from "../assets/Images/service-icon3.png"
-import service4 from "../assets/Images/service-icon4.png"
-import service5 from "../assets/Images/service-icon5.png"
+import serviceicon1 from "../assets/Images/service-icon1.png"
+import serviceicon2 from "../assets/Images/service-icon2.png"
+import serviceicon3 from "../assets/Images/service-icon3.png"
+import serviceicon4 from "../assets/Images/service-icon4.png"
+import serviceicon5 from "../assets/Images/service-icon5.png"
 
 
 const About = () => {
@@ -173,6 +173,7 @@ const About = () => {
                 <h2 className="text-2xl sm:text-6xl font-semibold max-w-3xl mt-5 leading-tight text-white"> We are a full service agency 
                 </h2>
           </div>
+
           <div  className='flex flex-col w-full mt-8'>
              <div className='service-item w-full flex justify-between items-center border-t border-white/20 border-b py-4 gap-5 flex-col-reverse lg:flex-row'>
                <div className='flex lg:items-start flex-col md:flex-row gap-5 md:gap-8 w-full text-white lg:w-1/2'>
@@ -184,8 +185,30 @@ const About = () => {
                     </p>
                    </div>
                </div>
-                 <div className='service-image w-full lg:w-1/2 flex lg:justify-end' ></div>
+                 <div className='service-image w-full lg:w-1/2 flex lg:justify-end'>
+                 <div className='border border-white/20 rounded-full w-[150px] h-[150px] p-3'>
+                      <img src={serviceicon1} alt="service-icon" className='invert brightness-0 w-full h-full object-contain rounded-full border border-white/20 border-b py-4 gap-5 '  />
+                 </div>
+                 </div>
              </div>
+
+              <div className='service-item w-full flex justify-between items-center border-t border-white/20 border-b py-4 gap-5 flex-col-reverse lg:flex-row'>
+               <div className='flex lg:items-start flex-col md:flex-row gap-5 md:gap-8 w-full text-white lg:w-1/2'>
+                   <span className='text-2xl font-semibold'>0.2</span>
+                   <div className='service-info'>
+                    <h4 className='text-2xl font-semibold pb-0.5'>Social  Media Campaign  </h4>
+                    <p className='text-gray-100 text-lg lg:w-3xl' > Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, aliquam explicabo obcaecati quos, ipsam velit optio itaque tempora corporis quas qui? Iste nisi recusandae maiores fugit voluptate totam voluptatem amet! 
+
+                    </p>
+                   </div>
+               </div>
+                 <div className='service-image w-full lg:w-1/2 flex lg:justify-end'>
+                 <div className='border border-white/20 rounded-full w-[150px] h-[150px] p-3'>
+                      <img src={serviceicon2} alt="service-icon" className='invert brightness-0 w-full h-full object-contain rounded-full border border-white/20'/>
+                 </div>
+                 </div>
+             </div>
+
           </div>
 
 
