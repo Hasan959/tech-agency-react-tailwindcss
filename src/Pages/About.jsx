@@ -181,14 +181,13 @@ const About = () => {
                    <div className='service-info'>
                     <h4 className='text-2xl font-semibold pb-0.5'>Brand Strategy </h4>
                     <p className='text-gray-100 text-lg lg:w-3xl' > Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, aliquam explicabo obcaecati quos, ipsam velit optio itaque tempora corporis quas qui? Iste nisi recusandae maiores fugit voluptate totam voluptatem amet! 
-
                     </p>
                    </div>
                </div>
                  <div className='service-image w-full lg:w-1/2 flex lg:justify-end'>
-                 <div className='border border-white/20 rounded-full w-[150px] h-[150px] p-3'>
+                   <div className='border border-white/20 rounded-full w-[150px] h-[150px] p-3'>
                       <img src={serviceicon1} alt="service-icon" className='invert brightness-0 w-full h-full object-contain rounded-full border border-white/20 border-b py-4 gap-5 '  />
-                 </div>
+                   </div>
                  </div>
              </div>
 
@@ -209,8 +208,55 @@ const About = () => {
                  </div>
              </div>
 
-          </div>
+             <div className='service-item w-full flex justify-between items-center border-t border-white/20 border-b py-4 gap-5 flex-col-reverse lg:flex-row'>
+               <div className='flex lg:items-start flex-col md:flex-row gap-5 md:gap-8 w-full text-white lg:w-1/2'>
+                   <span className='text-2xl font-semibold'>0.3</span>
+                   <div className='service-info'>
+                    <h4 className='text-2xl font-semibold pb-0.5'> Creative Direction  </h4>
+                    <p className='text-gray-100 text-lg lg:w-3xl' > Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, aliquam explicabo obcaecati quos, ipsam velit optio itaque tempora corporis quas qui? Iste nisi recusandae maiores fugit voluptate totam voluptatem amet! 
+                    </p>
+                   </div>
+               </div>
+                 <div className='service-image w-full lg:w-1/2 flex lg:justify-end'>
+                 <div className='border border-white/20 rounded-full w-[150px] h-[150px] p-3'>
+                      <img src={serviceicon3} alt="service-icon" className='invert brightness-0 w-full h-full object-contain rounded-full border border-white/20'/>
+                 </div>
+                 </div>
+             </div>
 
+              <div className='service-item w-full flex justify-between items-center border-t border-white/20 border-b py-4 gap-5 flex-col-reverse lg:flex-row'>
+               <div className='flex lg:items-start flex-col md:flex-row gap-5 md:gap-8 w-full text-white lg:w-1/2'>
+                   <span className='text-2xl font-semibold'>0.4</span>
+                   <div className='service-info'>
+                    <h4 className='text-2xl font-semibold pb-0.5'> Machine Learning / AI   </h4>
+                    <p className='text-gray-100 text-lg lg:w-3xl' > Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, aliquam explicabo obcaecati quos, ipsam velit optio itaque tempora corporis quas qui? Iste nisi recusandae maiores fugit voluptate totam voluptatem amet! 
+                    </p>
+                   </div>
+               </div>
+                 <div className='service-image w-full lg:w-1/2 flex lg:justify-end'>
+                 <div className='border border-white/20 rounded-full w-[150px] h-[150px] p-3'>
+                      <img src={serviceicon4} alt="service-icon" className='invert brightness-0 w-full h-full object-contain rounded-full border border-white/20'/>
+                 </div>
+                 </div>
+             </div>
+
+              <div className='service-item w-full flex justify-between items-center border-t border-white/20 border-b py-4 gap-5 flex-col-reverse lg:flex-row'>
+               <div className='flex lg:items-start flex-col md:flex-row gap-5 md:gap-8 w-full text-white lg:w-1/2'>
+                   <span className='text-2xl font-semibold'>0.5</span>
+                   <div className='service-info'>
+                    <h4 className='text-2xl font-semibold pb-0.5'> Visual Identify   </h4>
+                    <p className='text-gray-100 text-lg lg:w-3xl' > Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, aliquam explicabo obcaecati quos, ipsam velit optio itaque tempora corporis quas qui? Iste nisi recusandae maiores fugit voluptate totam voluptatem amet! 
+                    </p>
+                   </div>
+               </div>
+                 <div className='service-image w-full lg:w-1/2 flex lg:justify-end'>
+                 <div className='border border-white/20 rounded-full w-[150px] h-[150px] p-3'>
+                      <img src={serviceicon5} alt="service-icon" className='invert brightness-0 w-full h-full object-contain rounded-full border border-white/20'/>
+                 </div>
+                 </div>
+             </div>
+
+          </div>
 
         </div>
 
