@@ -10,8 +10,44 @@ import serviceicon3 from "../assets/Images/service-icon3.png"
 import serviceicon4 from "../assets/Images/service-icon4.png"
 import serviceicon5 from "../assets/Images/service-icon5.png"
 
+import team1 from "../assets/Images/team-01.png"
+import team2 from "../assets/Images/team-02.png"
+import team3 from "../assets/Images/team-03.png"
+import team4 from "../assets/Images/team-04.png"
+
 
 const About = () => {
+  const members = [
+      {
+        id:1,
+        name: "Arrav Rao",
+        role: "UI/UX Designer",
+        img: team1,
+        letter:"A",
+      },
+      {
+        id:2,
+        name: "Diya Mehra ",
+        role: "Digital Marketer",
+        img: team2,
+        letter:"D",
+      },
+      {
+        id:3,
+        name: "Karan Thakor",
+        role: "Digital Marketer",
+        img: team3,
+        letter:"k",
+      },
+      {
+        id:4,
+        name: "Sara Thomas ",
+        role: "Content Strategist ",
+        img: team4,
+        letter:"S",
+      },
+  
+     ];
   return (
     <>
       <div className="section-banner h-[500px] bg-[#121212] px-[2%] md:px-[8%] xl:px-[12%] flex flex-col justify-end items-start text-white w-full">
@@ -167,7 +203,7 @@ const About = () => {
           </ul>
         </div>
 
-        <div className='service py-[2%] md:px-[8%] xl:px-[12%]'>
+        <div className='service py-[2%] px-[2%] md:px-[8%] xl:px-[12%]'>
           <div className='service-content'>
             <span className='text-black bg-primary px-2 py-3 font-semibold text-md sm:text-xl rounded-sm'> what we do  </span>
                 <h2 className="text-2xl sm:text-6xl font-semibold max-w-3xl mt-5 leading-tight text-white"> We are a full service agency 
@@ -255,10 +291,87 @@ const About = () => {
                  </div>
                  </div>
              </div>
-
           </div>
-
         </div>
+
+          {/* Team */}
+        <div className=' team py-[8%] px-[2%] md:px-[8%] xl:px-[12%]'>
+                <div className='team-content w-full lg:w-[60%]  mb-10 '>
+                    <span className='text-black bg-primary px-2 py-3 font-semibold text-md sm:text-xl rounded-sm'>Expert Team Member  </span>
+                    <h2 className="text-2xl sm:text-6xl font-semibold sm:max-w-3xl mt-5 leading-tight text-white"> 
+                     We do awesome service for our clients.
+                   </h2>
+                </div>
+        
+                  <div className="team-wrapper  grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4">
+                    {members.map((member) =>(
+                      <div key={member.id} className=' team-item relative overflow-hidden border border-gray-50/20 h-[600px] md:h-[740px] group  flex flex-col justify-between  text-white cursor-pointer '>
+                        {/* Description */}
+                        <div className='desc  p-6 md:p-8'>
+                          <div className='mb-4'>
+                            <span className='block font-semibold text-gray-100 text-sm md:text-md  group-hover:text-black  transition-colors duration-300'>
+                              {member.name}
+                            </span>
+                            <span className='block font-semibold text-gray-100 text-sm md:text-md  group-hover:text-black  transition-colors duration-300'>
+                              {member.role}
+                            </span>
+                          </div>
+                          {/* Social Links */}
+                          <div className='flex gap-3 ' >
+                           <Link 
+                             to="#"
+                              className='border border-gray-50/20 p-3 md:p-5 rounded-full group-hover:border-black transition-colors'
+                              >
+                                <Icon
+                                    icon="ri:facebook-fill"
+                                    width="24"
+                                    height="24"
+                                    className='group-hover:text-black transition-transform duration-300
+                                    group-hover:scale-110 '
+                                />
+        
+                               </Link>
+                               <Link 
+                             to="#"
+                              className='border border-gray-50/20 p-3 md:p-5 rounded-full group-hover:border-black transition-colors'
+                              >
+                                <Icon
+                                    icon="flowbite:linkedin-solid"
+                                    width="24"
+                                    height="24"
+                                    className='group-hover:text-black transition-transform duration-300
+                                    group-hover:scale-110 '
+                                />
+        
+                               </Link>
+                              </div>
+        
+                              
+                        </div>
+                         {/* Image + letter  */}
+                         <img 
+                         src={member.img}
+                         alt={member.name}
+                          className='w-full h-auto scale-100 grayscale  group-hover:scale-110 group-hover:grayscale-0
+                           transition-all duration-500 ease-[cubic-bezier(0.3,0,0.3,1)] '
+                           />
+        
+                           <div className='num absolute -right-3 md:-right-5 bottom-0 text-[180px] sm:text-[220px] md:text-[300px] font-bold leading-[0.5] group-hover:text-primary pointer-events-none transition-all duration-500 
+                           ease-[cubic-bezier(0.3,0,0.3,1)]'
+                            style={{
+                              textShadow:
+                              "12px 1px 0 #000, -1px 1px 0 #000, 1px -1px 0 #000, -1px -1px 0 #000"
+                            }}
+                           >
+                            <span> {member.letter} </span>
+                            
+                           </div>
+        
+                      </div>
+                    ) )}
+        
+                  </div>
+                </div>
 
     </>
   )
