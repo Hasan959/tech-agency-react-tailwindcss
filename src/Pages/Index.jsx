@@ -146,6 +146,7 @@ const Index = () => {
       rating: 4, 
     }
    ];
+
    const blogs = [
     {
       id: 1,
@@ -494,7 +495,7 @@ const Index = () => {
                 options={{
                    type:"fade",
                    rewind: true,
-                   autoPlay:true,
+                   autoplay:true,
                    interval:4000,
                    pauseOnHover:true,
                    arrows:false,

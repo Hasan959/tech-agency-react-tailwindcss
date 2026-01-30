@@ -15,6 +15,9 @@ import team2 from "../assets/Images/team-02.png"
 import team3 from "../assets/Images/team-03.png"
 import team4 from "../assets/Images/team-04.png"
 
+import "@splidejs/react-splide/css";
+import { Splide ,SplideSlide} from "@splidejs/react-splide";
+
 
 const About = () => {
   const members = [
@@ -48,6 +51,36 @@ const About = () => {
       },
   
      ];
+
+     const testimonials = [
+    {
+      id:1,
+      text: "Their high level of customer service complemented their techical experise,they were responsive,supportive and communicative. Their dedication to the project was impressive",
+      name: "jessica  Brown",
+      role: "Design Quality",
+      rating: 4.5, 
+    },
+    {
+      id:2,
+      text: " service complemented their techical experise,they were responsive,supportive and communicative. Their dedication to the project was impressive ",
+      name: "Rohan Metha ",
+      role: "Creative Director",
+      rating: 4.5, 
+    },
+    {
+      id:3,
+      text: "level of customer service complemented their techical experise,they were responsive,supportive and communicative. Their dedication to the project was impressive  ",
+      name: "Emily devis ",
+      role: "Creative Director",
+      rating: 4.5, 
+    },{
+      id:4,
+      text: "Their dedication to the project was impressive level of customer service complemented their techical  ",
+      name: "Arjun Patel ",
+      role: "Startup founder",
+      rating: 4, 
+    }
+   ];
   return (
     <>
       <div className="section-banner h-[500px] bg-[#121212] px-[2%] md:px-[8%] xl:px-[12%] flex flex-col justify-end items-start text-white w-full">
@@ -372,6 +405,59 @@ const About = () => {
         
                   </div>
                 </div>
+
+                 {/* Testimonial */}
+        <div className=' Testimonials py-[8%] px-[2%] md:px-[8%] xl:px-[12%] flex flex-col lg:flex-row justify-between items-start gap-10 '>
+        <div className='tst-content w-full lg:w-1/2  text-white '>
+            <h2 className="text-3xl sm:text-6xl font-semibold sm:max-w-3xl my-5 leading-tight text-white"> 
+             Testimonials
+           </h2>
+           <div className='font-normal text-xl flex items-center'>
+            4.5{" "}
+            <span className='flex text-yellow-400 ml-2' >
+              <Icon icon="material-symbols:star-rounded" width="24" height="24" />
+              <Icon icon="material-symbols:star-rounded" width="24" height="24" />
+              <Icon icon="material-symbols:star-rounded" width="24" height="24" />
+              <Icon icon="material-symbols:star-rounded" width="24" height="24" />
+              <Icon icon="ic:round-star-half" width="24" height="24" />
+            </span>{" "}
+                rating from all my clients
+           </div>
+          </div>
+          <div className="w-full lg:w-1/2  border-l border-white ps-10 ">
+            <Splide 
+                options={{
+                   type:"fade",
+                   rewind: true,
+                   autoplay:true,
+                   interval:4000,
+                   pauseOnHover:true,
+                   arrows:false,
+                   pagination: true,
+                   speed:800,
+                }}
+                >
+                  {testimonials.map((t) =>
+                   <SplideSlide key={t.id}>
+                    <div className='text-white'>
+                      <p className='text-gray-400 text-2xl md:text-3xl max-w-2xl leading-tight mb-6 font-medium'>
+                        {t.text}
+                      </p>
+                      <div>
+                        <h3 className='text-2xl md:text-3xl font-semibold'>
+                          {t.name}
+                        </h3>
+                        <span className='text-gray-300'> {t.role} </span>
+                      </div>
+                    </div>
+
+                   </SplideSlide>
+                   )}
+
+            </Splide>
+          </div>
+         
+        </div>
 
     </>
   )
