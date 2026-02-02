@@ -8,7 +8,7 @@ import team4 from "../assets/Images/team-04.png"
 import team5 from "../assets/Images/team-05.jpg"
 import team6 from "../assets/Images/team-06.jpg"
 
-const teamMember = [
+const teamMembers = [
   {
     id:"1",
     name:"Aarav Rau",
@@ -21,9 +21,9 @@ const teamMember = [
   },
   {
     id:"2",
-    name:"Aarav Rau",
-    role:"UI/UX Designer",
-    img: team1,
+    name:"avik Rau",
+    role:"software engineer",
+    img: team2,
     age:"27 Years",
     location:"Mumbai, India",
     email:"hasanmahmud.biddut@gmail.com",
@@ -31,9 +31,9 @@ const teamMember = [
   },
   {
     id:"3",
-    name:"Aarav Rau",
-    role:"UI/UX Designer",
-    img: team1,
+    name:"Ratin Rau",
+    role:"CEO",
+    img: team3,
     age:"27 Years",
     location:"Mumbai, India",
     email:"hasanmahmud.biddut@gmail.com",
@@ -41,9 +41,9 @@ const teamMember = [
   },
   {
     id:"4",
-    name:"Aarav Rau",
-    role:"UI/UX Designer",
-    img: team1,
+    name:"Beijik Rau",
+    role:"Senior Software Engineer",
+    img: team4,
     age:"27 Years",
     location:"Mumbai, India",
     email:"hasanmahmud.biddut@gmail.com",
@@ -51,9 +51,9 @@ const teamMember = [
   },
   {
     id:"5",
-    name:"Aarav Rau",
+    name:"Physics Rau",
     role:"UI/UX Designer",
-    img: team1,
+    img: team5,
     age:"27 Years",
     location:"Mumbai, India",
     email:"hasanmahmud.biddut@gmail.com",
@@ -61,24 +61,15 @@ const teamMember = [
   },
   {
     id:"6",
-    name:"Aarav Rau",
+    name:"Rowdy Rau",
     role:"UI/UX Designer",
-    img: team1,
+    img: team6,
     age:"27 Years",
     location:"Mumbai, India",
     email:"hasanmahmud.biddut@gmail.com",
     phone:"+8801755327835"
   },
-  {
-    id:"7",
-    name:"Aarav Rau",
-    role:"UI/UX Designer",
-    img: team1,
-    age:"27 Years",
-    location:"Mumbai, India",
-    email:"hasanmahmud.biddut@gmail.com",
-    phone:"+8801755327835"
-  },
+  
 ]
 
 const Team = () => {
@@ -106,6 +97,19 @@ const Team = () => {
         </div>
 
         <div className='py-[8%] px-[12%] grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-10'>
+          {teamMembers.map((member) =>(
+            <Link to={`/team/${member.id}`} key={member.id}>
+              <div className='text-center'>
+                <div className='bg-white rounded-sm overflow-hidden'>
+                  <img src={member.img} alt={member.name} className='object-cover w-full' />
+                </div>
+                <h4 className='text-2xl text-white mt-4 font-semibold'>
+                  {member.name}
+                </h4>
+                <span className='text-lg text-gray-300'> {member.role} </span>
+              </div>
+            </Link>
+          ) )}
 
         </div>
     </>
