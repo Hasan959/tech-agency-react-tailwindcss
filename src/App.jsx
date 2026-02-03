@@ -4,6 +4,7 @@ import Index from "./Pages/Index"
 import Footer from "./Components/Footer"
 import About from "./Pages/About"
 import Team from "./Pages/Team"
+import TeamDetails from "./Pages/TeamDetails"
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path="/" element={<Index/>} />
         <Route path="/about" element={<About/>}/>
         <Route path="/team" element={<Team/>}/>
+        <Route path="/team/:id" element={<TeamDetails/>}/>
       </Routes>
       <Footer/>
     

@@ -8,7 +8,7 @@ import team4 from "../assets/Images/team-04.png"
 import team5 from "../assets/Images/team-05.jpg"
 import team6 from "../assets/Images/team-06.jpg"
 
-const teamMembers = [
+ export const teamMembers = [
   {
     id:"1",
     name:"Aarav Rau",
