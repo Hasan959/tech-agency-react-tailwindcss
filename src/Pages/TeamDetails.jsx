@@ -10,6 +10,7 @@ import title_icon from "../assets/Images/title_icon.svg"
   const member = teamMembers.find(m=> m.id ===id)
 
   //export variable from team.jsx
+  //export variable from team.jsx
   useEffect(()=> {
     if(!member) navigate("/team")
   },[member,navigate])
