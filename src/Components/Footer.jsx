@@ -50,6 +50,7 @@ const Footer = () => {
             ) )}
            </div>
         </div>
+        
          <hr className='border-gray-700 mb-6' />
 
          <div className='flex flex-col md:flex-row justify-between  items-center  gap-5  ' >
