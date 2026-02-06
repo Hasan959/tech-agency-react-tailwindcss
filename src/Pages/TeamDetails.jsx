@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 import { Link, useNavigate, useParams } from 'react-router'
 import { teamMembers } from './Team'
 import title_icon from "../assets/Images/title_icon.svg"
+import { Icon } from '@iconify/react'
 
   const TeamDetails = () => {
   const {id} =useParams()
@@ -9,7 +10,7 @@ import title_icon from "../assets/Images/title_icon.svg"
 
   const member = teamMembers.find(m=> m.id ===id)
 
-  //export variable from team.jsx
+  //Export variable from team.jsx
   
   useEffect(()=> {
     if(!member) navigate("/team")
@@ -51,9 +52,34 @@ import title_icon from "../assets/Images/title_icon.svg"
         <div className='py-[8%] px-[2%] md:px-[8%] lx:px-[12%]'>
           <div className='w-full border border-white h-auto xl:h-[600px] flex justify-between flex-col xl:flex-row items-start gap-10 xl:gap-4 relative xl:p-0 lg:p-20 sm:p-10 p-5'>
             <div className='w-full xl:w-fit h-[600px] xl:h-full bg-white xl:p-0 m-0 xl:m-20 rounded-sm overflow-hidden'>
-
-              <img src={member.img} alt="" />
-              
+              <img src={member.img} alt="team-image" className='h-full w-full object-cover object-top'/>
+            </div>
+            <div className='w-full xl:w-[60%] xl:p-20 text-white'>
+              <h4 className='text-5xl font-semibold'> {member.name} </h4>
+              <span className='text-xl text-gray-300'> {member.role} </span>
+              <ul>
+                <li className='py-4 border-t border-gray-50/20 mt-5 flex justify-between flex-col sm:flex-row  gap-3 sm:gap-0'>
+                <span className='text-xl font-semibold' >  Age</span>
+                <p className='text-gray-300/80'> {member.age} </p>
+                </li>
+                <li className='py-4 border-t border-gray-50/20 mt-5 flex justify-between flex-col sm:flex-row  gap-3 sm:gap-0'>
+                <span className='text-xl font-semibold' >  Location </span>
+                <p className='text-gray-300/80'> {member.location} </p>
+                </li>
+                <li className='py-4 border-t border-gray-50/20 mt-5 flex justify-between flex-col sm:flex-row  gap-3 sm:gap-0'>
+                <span className='text-xl font-semibold' >  Email </span>
+                <p className='text-gray-300/80'> {member.email} </p>
+                </li>
+                <li className='py-4 border-t border-gray-50/20 mt-5 flex justify-between flex-col sm:flex-row  gap-3 sm:gap-0'>
+                <span className='text-xl font-semibold' >  Phone </span>
+                <p className='text-gray-300/80'> {member.phone} </p>
+                </li>
+              </ul>
+                <div className='text-white flex items-center mt-5 gap-5'>
+                  <Link to='https://www.facebook.com' className='cursor-pointer'   >
+                  <Icon icon="ri:facebook-line" width="24" height='24' className='border border-white rounded-sm min-w-10 min-h-10 p-1   '   />
+                  </Link>
+                </div>
             </div>
 
           </div>

@@ -25,7 +25,7 @@ import team6 from "../assets/Images/team-06.jpg"
     role:"software engineer",
     img: team2,
     age:"27 Years",
-    location:"Mumbai, India",
+    location:"Australia,garage",
     email:"hasanmahmud.biddut@gmail.com",
     phone:"+8801755327835"
   },
@@ -35,7 +35,7 @@ import team6 from "../assets/Images/team-06.jpg"
     role:"CEO",
     img: team3,
     age:"27 Years",
-    location:"Mumbai, India",
+    location:"Sanfransisko",
     email:"hasanmahmud.biddut@gmail.com",
     phone:"+8801755327835"
   },
@@ -45,7 +45,7 @@ import team6 from "../assets/Images/team-06.jpg"
     role:"Senior Software Engineer",
     img: team4,
     age:"27 Years",
-    location:"Mumbai, India",
+    location:"Bangladesh",
     email:"hasanmahmud.biddut@gmail.com",
     phone:"+8801755327835"
   },
@@ -55,7 +55,7 @@ import team6 from "../assets/Images/team-06.jpg"
     role:"UI/UX Designer",
     img: team5,
     age:"27 Years",
-    location:"Mumbai, India",
+    location:"United kingdom",
     email:"hasanmahmud.biddut@gmail.com",
     phone:"+8801755327835"
   },
@@ -65,7 +65,7 @@ import team6 from "../assets/Images/team-06.jpg"
     role:"UI/UX Designer",
     img: team6,
     age:"27 Years",
-    location:"Mumbai, India",
+    location:"Nepal",
     email:"hasanmahmud.biddut@gmail.com",
     phone:"+8801755327835"
   },
