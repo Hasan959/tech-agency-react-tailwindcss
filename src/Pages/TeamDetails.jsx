@@ -76,8 +76,11 @@ import { Icon } from '@iconify/react'
                 </li>
               </ul>
                 <div className='text-white flex items-center mt-5 gap-5'>
-                  <Link to='https://www.facebook.com' className='cursor-pointer'   >
-                  <Icon icon="ri:facebook-line" width="24" height='24' className='border border-white rounded-sm min-w-10 min-h-10 p-1   '   />
+                  <Link to='https://www.facebook.com' className='cursor-pointer' target='blank'>
+                  <Icon icon="ri:facebook-line" width="24" height='24' className='border border-white rounded-sm min-w-10 min-h-10 p-1'/>
+                  </Link>
+                   <Link to='https://www.facebook.com' className='cursor-pointer' target='blank'>
+                  <Icon icon="flowbite:linkedin-solid" width="24" height='24' className='border border-white rounded-sm min-w-10 min-h-10 p-1'/>
                   </Link>
                 </div>
             </div>
