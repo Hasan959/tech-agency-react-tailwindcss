@@ -79,13 +79,15 @@ import { Icon } from '@iconify/react'
                   <Link to='https://www.facebook.com' className='cursor-pointer' target='blank'>
                   <Icon icon="ri:facebook-line" width="24" height='24' className='border border-white rounded-sm min-w-10 min-h-10 p-1'/>
                   </Link>
-                   <Link to='https://www.facebook.com' className='cursor-pointer' target='blank'>
+                   <Link to='https://linkedin.com' className='cursor-pointer' target='blank'>
                   <Icon icon="flowbite:linkedin-solid" width="24" height='24' className='border border-white rounded-sm min-w-10 min-h-10 p-1'/>
                   </Link>
                 </div>
             </div>
-
           </div>
+          <p className='text-white pt-5 xl:pt-0 xl:mt-30 pb-4 text-sm md:text-lg '>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet id nihil assumenda distinctio possimus expedita a odit cum nobis pariatur excepturi modi ipsum porro necessitatibus iste consectetur maiores voluptates perferendis reiciendis, fuga voluptatem quia omnis sunt? Nemo sint maxime facilis repellendus, soluta minima beatae dolores id doloremque voluptatum reprehenderit reiciendis ex quaerat vitae. Tempore, quas dolorem? Illo deserunt ullam quaerat.
+          </p>
         </div>
     </>
   )
