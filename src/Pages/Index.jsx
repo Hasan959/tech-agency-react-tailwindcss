@@ -357,7 +357,7 @@ const Index = () => {
 
         </div>
       </div>
-      {/* Featured Projects */}
+      {/* Featured  */}
       <div className='featured py-[8%] px-[2%] md:px-[8%] xl:px-[12%]'>
         <div className='featured-content w-full flex justify-between flex-col lg:flex-row lg:items-end mb-10 '>
           <div>

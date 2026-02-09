@@ -4,6 +4,17 @@ import { teamMembers } from './Team'
 import title_icon from "../assets/Images/title_icon.svg"
 import { Icon } from '@iconify/react'
 
+import serviceicon1 from "../assets/Images/service-icon1.png"
+import serviceicon2 from "../assets/Images/service-icon2.png"
+import serviceicon3 from "../assets/Images/service-icon3.png"
+import serviceicon4 from "../assets/Images/service-icon4.png"
+import serviceicon5 from "../assets/Images/service-icon5.png"
+
+import project1 from "../assets/Images/project-01.jpg"
+import project2 from "../assets/Images/project-02.jpg"
+import project3 from "../assets/Images/project-03.jpg"
+import project4 from "../assets/Images/project-04.jpg"
+
   const TeamDetails = () => {
   const {id} =useParams()
   const navigate = useNavigate() 
@@ -49,7 +60,7 @@ import { Icon } from '@iconify/react'
         </div>
 
         {/* Team Info */}
-        <div className='py-[8%] px-[2%] md:px-[8%] lx:px-[12%]'>
+        <div className='py-[8%] px-[2%] md:px-[8%] xl:px-[12%]'>
           <div className='w-full border border-white h-auto xl:h-[600px] flex justify-between flex-col xl:flex-row items-start gap-10 xl:gap-4 relative xl:p-0 lg:p-20 sm:p-10 p-5'>
             <div className='w-full xl:w-fit h-[600px] xl:h-full bg-white xl:p-0 m-0 xl:m-20 rounded-sm overflow-hidden'>
               <img src={member.img} alt="team-image" className='h-full w-full object-cover object-top'/>
@@ -88,7 +99,173 @@ import { Icon } from '@iconify/react'
           <p className='text-white pt-5 xl:pt-0 xl:mt-30 pb-4 text-sm md:text-lg '>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet id nihil assumenda distinctio possimus expedita a odit cum nobis pariatur excepturi modi ipsum porro necessitatibus iste consectetur maiores voluptates perferendis reiciendis, fuga voluptatem quia omnis sunt? Nemo sint maxime facilis repellendus, soluta minima beatae dolores id doloremque voluptatum reprehenderit reiciendis ex quaerat vitae. Tempore, quas dolorem? Illo deserunt ullam quaerat.
           </p>
+          <p className='text-white text-sm md:text-lg'>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt aperiam perferendis, beatae necessitatibus illo, odit inventore aspernatur dignissimos facilis obcaecati iusto molestias itaque alias accusantium numquam ex sequi, rerum ipsam! Quisquam distinctio necessitatibus illo sunt accusantium. Ab recusandae, accusamus deserunt molestiae culpa repudiandae, nulla qui neque dolore error hic rerum.
+          </p>
+          <ul className='text-white/80 pt-5 ps-5 space-y-3 list-disc ' > 
+            <li>
+                 Lorem ipsum dolor sit amet.
+            </li>
+            <li>
+                 Lorem ipsum dolor sit amet.
+            </li>
+            <li>
+                 Lorem ipsum dolor sit amet.
+            </li>
+            <li>
+                 Lorem ipsum dolor sit amet.
+            </li>
+            v
+          </ul>
         </div>
+
+        {/* Service */}
+         <div className='service py-[2%] px-[2%] md:px-[8%] xl:px-[12%]'>
+                  <div className='service-content'>
+                    <span className='text-black bg-primary px-2 py-3 font-semibold text-md sm:text-xl rounded-sm'> what we do  </span>
+                        <h2 className="text-2xl sm:text-6xl font-semibold max-w-3xl mt-5 leading-tight text-white"> We are a full service agency 
+                        </h2>
+                  </div>
+        
+                  <div  className='flex flex-col w-full mt-8'>
+                     <div className='service-item w-full flex justify-between items-center border-t border-white/20 border-b py-4 gap-5 flex-col-reverse lg:flex-row'>
+                       <div className='flex lg:items-start flex-col md:flex-row gap-5 md:gap-8 w-full text-white lg:w-1/2'>
+                           <span className='text-2xl font-semibold'>0.1</span>
+                           <div className='service-info'>
+                            <h4 className='text-2xl font-semibold pb-0.5'>Brand Strategy </h4>
+                            <p className='text-gray-100 text-lg lg:w-3xl' > Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, aliquam explicabo obcaecati quos, ipsam velit optio itaque tempora corporis quas qui? Iste nisi recusandae maiores fugit voluptate totam voluptatem amet! 
+                            </p>
+                           </div>
+                       </div>
+                         <div className='service-image w-full lg:w-1/2 flex lg:justify-end'>
+                           <div className='border border-white/20 rounded-full w-[150px] h-[150px] p-3'>
+                              <img src={serviceicon1} alt="service-icon" className='invert brightness-0 w-full h-full object-contain rounded-full border border-white/20 border-b py-4 gap-5 '  />
+                           </div>
+                         </div>
+                     </div>
+        
+                      <div className='service-item w-full flex justify-between items-center border-t border-white/20 border-b py-4 gap-5 flex-col-reverse lg:flex-row'>
+                       <div className='flex lg:items-start flex-col md:flex-row gap-5 md:gap-8 w-full text-white lg:w-1/2'>
+                           <span className='text-2xl font-semibold'>0.2</span>
+                           <div className='service-info'>
+                            <h4 className='text-2xl font-semibold pb-0.5'>Social  Media Campaign  </h4>
+                            <p className='text-gray-100 text-lg lg:w-3xl' > Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, aliquam explicabo obcaecati quos, ipsam velit optio itaque tempora corporis quas qui? Iste nisi recusandae maiores fugit voluptate totam voluptatem amet! 
+        
+                            </p>
+                           </div>
+                       </div>
+                         <div className='service-image w-full lg:w-1/2 flex lg:justify-end'>
+                         <div className='border border-white/20 rounded-full w-[150px] h-[150px] p-3'>
+                              <img src={serviceicon2} alt="service-icon" className='invert brightness-0 w-full h-full object-contain rounded-full border border-white/20'/>
+                         </div>
+                         </div>
+                     </div>
+        
+                     <div className='service-item w-full flex justify-between items-center border-t border-white/20 border-b py-4 gap-5 flex-col-reverse lg:flex-row'>
+                       <div className='flex lg:items-start flex-col md:flex-row gap-5 md:gap-8 w-full text-white lg:w-1/2'>
+                           <span className='text-2xl font-semibold'>0.3</span>
+                           <div className='service-info'>
+                            <h4 className='text-2xl font-semibold pb-0.5'> Creative Direction  </h4>
+                            <p className='text-gray-100 text-lg lg:w-3xl' > Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, aliquam explicabo obcaecati quos, ipsam velit optio itaque tempora corporis quas qui? Iste nisi recusandae maiores fugit voluptate totam voluptatem amet! 
+                            </p>
+                           </div>
+                       </div>
+                         <div className='service-image w-full lg:w-1/2 flex lg:justify-end'>
+                         <div className='border border-white/20 rounded-full w-[150px] h-[150px] p-3'>
+                              <img src={serviceicon3} alt="service-icon" className='invert brightness-0 w-full h-full object-contain rounded-full border border-white/20'/>
+                         </div>
+                         </div>
+                     </div>
+        
+                      <div className='service-item w-full flex justify-between items-center border-t border-white/20 border-b py-4 gap-5 flex-col-reverse lg:flex-row'>
+                       <div className='flex lg:items-start flex-col md:flex-row gap-5 md:gap-8 w-full text-white lg:w-1/2'>
+                           <span className='text-2xl font-semibold'>0.4</span>
+                           <div className='service-info'>
+                            <h4 className='text-2xl font-semibold pb-0.5'> Machine Learning / AI   </h4>
+                            <p className='text-gray-100 text-lg lg:w-3xl' > Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, aliquam explicabo obcaecati quos, ipsam velit optio itaque tempora corporis quas qui? Iste nisi recusandae maiores fugit voluptate totam voluptatem amet! 
+                            </p>
+                           </div>
+                       </div>
+                         <div className='service-image w-full lg:w-1/2 flex lg:justify-end'>
+                         <div className='border border-white/20 rounded-full w-[150px] h-[150px] p-3'>
+                              <img src={serviceicon4} alt="service-icon" className='invert brightness-0 w-full h-full object-contain rounded-full border border-white/20'/>
+                         </div>
+                         </div>
+                     </div>
+        
+                      <div className='service-item w-full flex justify-between items-center border-t border-white/20 border-b py-4 gap-5 flex-col-reverse lg:flex-row'>
+                       <div className='flex lg:items-start flex-col md:flex-row gap-5 md:gap-8 w-full text-white lg:w-1/2'>
+                           <span className='text-2xl font-semibold'>0.5</span>
+                           <div className='service-info'>
+                            <h4 className='text-2xl font-semibold pb-0.5'> Visual Identify   </h4>
+                            <p className='text-gray-100 text-lg lg:w-3xl' > Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, aliquam explicabo obcaecati quos, ipsam velit optio itaque tempora corporis quas qui? Iste nisi recusandae maiores fugit voluptate totam voluptatem amet! 
+                            </p>
+                           </div>
+                       </div>
+                         <div className='service-image w-full lg:w-1/2 flex lg:justify-end'>
+                         <div className='border border-white/20 rounded-full w-[150px] h-[150px] p-3'>
+                              <img src={serviceicon5} alt="service-icon" className='invert brightness-0 w-full h-full object-contain rounded-full border border-white/20'/>
+                         </div>
+                         </div>
+                     </div>
+                  </div>
+        </div>
+
+        {/* Featured */}
+        <div className='featured py-[8%] px-[2%] md:px-[8%] xl:px-[12%]'>
+                <div className='featured-content w-full flex justify-between flex-col lg:flex-row lg:items-end mb-10 '>
+                  <div>
+                    <span className='text-black bg-primary px-2 py-3 font-semibold text-md sm:text-xl rounded-sm'>Featured Projects</span>
+                    <h2 className="text-2xl sm:text-6xl font-semibold sm:max-w-3xl mt-5 leading-tight text-white"> Studio Showcase 
+                   </h2>
+                  </div>
+                  <Link to="/projects" className='btn rounded-sm w-fit '>
+                       <Icon icon="vaadin:plus" width="30" height="30"/>
+                       <span> More Projects   </span>
+                    </Link>
+                </div>
+        
+                <div className='grid grid-cols-1 xl:grid-cols-2 text-white gap-10 w-full lg:w-[90%] xl:w-full'>
+                  <div className='border-gray-300/20 border p-5 rounded-lg group'>
+                  <div className=' h-[550px] w-full rounded-lg overflow-hidden mb-5'>
+                    <img src={project1} alt="project-image" className='w-full h-full group-hover:scale-110 object-cover transition-all duration-300'/>
+                  </div>
+                  <Link to="projects">
+                  <span className='text-white border border-gray-50/20 px-2 py-1 font-semibold text-lg'>
+                     Branding
+                  </span>
+                  <h3 className='text-2xl sm:text-4xl font-semibold mt-2 hover:text-primary duration-300'> Musumes Art Concept  </h3>
+                  </Link> 
+                  </div>
+
+                  <div className='border-gray-300/20 border p-5 rounded-lg group'>
+                  <div className=' h-[550px] w-full rounded-lg overflow-hidden mb-5'>
+                    <img src={project2} alt="project-image" className='w-full h-full group-hover:scale-110 object-cover transition-all duration-300'/>
+                  </div>
+                  <Link to="projects">
+                  <span className='text-white border border-gray-50/20 px-2 py-1 font-semibold text-lg'>
+                     Markteing 
+                  </span>
+                  <h3 className='text-2xl sm:text-4xl font-semibold mt-2 hover:text-primary duration-300'> Market Economy Graphics  </h3>
+                  </Link> 
+                  </div>
+
+                  <div className='border-gray-300/20 border p-5 rounded-lg group'>
+                  <div className=' h-[550px] w-full rounded-lg overflow-hidden mb-5'>
+                    <img src={project3} alt="project-image" className='w-full h-full group-hover:scale-110 object-cover transition-all duration-300'/>
+                  </div>
+                  <Link to="projects">
+                  <span className='text-white border border-gray-50/20 px-2 py-1 font-semibold text-lg'>
+                     Branding
+                  </span>
+                  <h3 className='text-2xl sm:text-4xl font-semibold mt-2 hover:text-primary duration-300'> Musumes Art Concept  </h3>
+                  </Link> 
+
+                  </div>
+
+                </div>
+                
+              </div>
     </>
   )
 }

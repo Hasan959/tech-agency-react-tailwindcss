@@ -4,6 +4,7 @@ import { Link } from 'react-router'
 import { Icon } from '@iconify/react'
 import aboutlogo from "../assets/Images/novo-about-logo.png"
 import CountUp from 'react-countup'
+
 import serviceicon1 from "../assets/Images/service-icon1.png"
 import serviceicon2 from "../assets/Images/service-icon2.png"
 import serviceicon3 from "../assets/Images/service-icon3.png"
@@ -243,7 +244,8 @@ const About = () => {
           </li>
           </ul>
         </div>
-
+         
+         {/* Service */}
         <div className='service py-[2%] px-[2%] md:px-[8%] xl:px-[12%]'>
           <div className='service-content'>
             <span className='text-black bg-primary px-2 py-3 font-semibold text-md sm:text-xl rounded-sm'> what we do  </span>
