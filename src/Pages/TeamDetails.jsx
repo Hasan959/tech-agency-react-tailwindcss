@@ -13,7 +13,7 @@ import serviceicon5 from "../assets/Images/service-icon5.png"
 import project1 from "../assets/Images/project-01.jpg"
 import project2 from "../assets/Images/project-02.jpg"
 import project3 from "../assets/Images/project-03.jpg"
-import project4 from "../assets/Images/project-04.jpg"
+import project5 from "../assets/Images/project-05.jpg"
 
   const TeamDetails = () => {
   const {id} =useParams()
@@ -256,16 +256,27 @@ import project4 from "../assets/Images/project-04.jpg"
                   </div>
                   <Link to="projects">
                   <span className='text-white border border-gray-50/20 px-2 py-1 font-semibold text-lg'>
-                     Branding
+                     Design 
                   </span>
-                  <h3 className='text-2xl sm:text-4xl font-semibold mt-2 hover:text-primary duration-300'> Musumes Art Concept  </h3>
+                  <h3 className='text-2xl sm:text-4xl font-semibold mt-2 hover:text-primary duration-300'> Headphone 3d Rendering    </h3>
                   </Link> 
+                  </div>
 
+                  <div className='border-gray-300/20 border p-5 rounded-lg group'>
+                  <div className=' h-[550px] w-full rounded-lg overflow-hidden mb-5'>
+                    <img src={project5} alt="project-image" className='w-full h-full group-hover:scale-110 object-cover transition-all duration-300'/>
+                  </div>
+                  <Link to="projects">
+                  <span className='text-white border border-gray-50/20 px-2 py-1 font-semibold text-lg'>
+                     Design 
+                  </span>
+                  <h3 className='text-2xl sm:text-4xl font-semibold mt-2 hover:text-primary duration-300'> Business Card and logo    </h3>
+                  </Link> 
                   </div>
 
                 </div>
                 
-              </div>
+        </div>
     </>
   )
 }
