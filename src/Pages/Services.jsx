@@ -1,6 +1,11 @@
 import React from 'react'
 import { Link } from 'react-router'
 import title_icon from "../assets/Images/title_icon.svg"
+
+import sericon1 from '../assets/Images/serv-icon4.png'
+import sericon2 from '../assets/Images/serv-icon5.png'
+import sericon3 from '../assets/Images/serv-icon6.png'
+
 //services section 
 const Services = () => {
   return (
@@ -27,6 +32,14 @@ const Services = () => {
             </Link>
           </li>
          </ul>
+      </div>
+
+      <div className='grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-14 py-[8%] px-[2%] md:px-[8%] xl:px-[12%] overflow-x-hidden'> 
+        <div className='ser-item border border-gray-50/20 text-center rounded-sm relative'>
+        <div className='image bg-primary mx-auto w-30 h-30 md:w-40 md:h-40 p-8 rounded-full transform -translate-y-8 md:-translate-y-14'>
+          <img src={sericon1} alt="service-icon" />
+        </div>
+        </div>
       </div>
     </>
   )
