@@ -39,6 +39,9 @@ const Services = () => {
         <div className='image bg-primary mx-auto w-30 h-30 md:w-40 md:h-40 p-8 rounded-full transform -translate-y-8 md:-translate-y-14'>
           <img src={sericon1} alt="service-icon" />
         </div>
+          <div className='service-info text-white p-8 pt-0 ' >
+            <h4 className='text-4xl font-semibold pb-4'> Brand Creation </h4>
+          </div>
         </div>
       </div>
     </>

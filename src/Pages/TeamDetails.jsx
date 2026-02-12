@@ -15,14 +15,13 @@ import project2 from "../assets/Images/project-02.jpg"
 import project3 from "../assets/Images/project-03.jpg"
 import project5 from "../assets/Images/project-05.jpg"
 
+//Export variable from team.jsx
   const TeamDetails = () => {
   const {id} =useParams()
   const navigate = useNavigate() 
 
   const member = teamMembers.find(m=> m.id ===id)
 
-  //Export variable from team.jsx
-  
   useEffect(()=> {
     if(!member) navigate("/team")
   },[member,navigate])
