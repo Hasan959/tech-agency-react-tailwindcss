@@ -83,6 +83,9 @@ const Services = () => {
                <li>
                  <span> Guidelines   </span>
                </li>
+                <li>
+                 <span> Guidelines   </span>
+               </li>
              </ul>
           </div>
         </div>
