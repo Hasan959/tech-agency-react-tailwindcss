@@ -92,6 +92,7 @@ const About = () => {
    ];
   return (
     <>
+        {/* div start */}
       <div className="section-banner h-[500px] bg-[#121212] px-[2%] md:px-[8%] xl:px-[12%] flex flex-col justify-end items-start text-white w-full">
         <h2 className='text-5xl lg:text-7xl font-semibold w-full lg:max-w-2xl relative pb-3 ' >
           About Us 
@@ -115,7 +116,9 @@ const About = () => {
           </li>
          </ul>
       </div>
-
+      {/* div end */}
+       
+       {/* div start */}
       <div className='about py-[8%] px-[2%] md:px-[12%] xl:px-[12%] flex justify-between items-start lg:flex-row flex-col gap-10 ' >
               <div className="about-content w-full lg:w-[60%] ">
                 <span className='text-black bg-primary px-2 py-3 font-semibold text-md sm:text-xl rounded-sm'> welcome to Nova  </span>
@@ -142,7 +145,9 @@ const About = () => {
                 </div>
               </div>
             </div>
-
+            {/* div end */}
+             
+             {/* div start */}
             <div className='grid grid-cols-1 py-[8%] sm:grid-cols-3 gap-12 px-[2%] md:px-[8%] xl:px-[12%]'>
           <div className='text-center' >
             <h2 className='text-7xl sm:text-8xl font-bold leading-none color:transparent'
@@ -183,8 +188,10 @@ const About = () => {
               Lines of code 
             </p>
           </div>
-        </div>
-
+           </div>
+        {/* div end */}
+        
+         {/* div start */}
         <div className='w-full py-[8%] px-[2%] md:px-[8%] xl:px-[12%]'>
           <div className='banner bg-cover object-bottom bg-center h-[800px] relative'>
             <div className=' absolute top-0 left-0 h-full w-full flex justify-center items-center z-10'>
@@ -244,6 +251,7 @@ const About = () => {
           </li>
           </ul>
         </div>
+        {/* div end */}
          
          {/* Service */}
         <div className='service py-[2%] px-[2%] md:px-[8%] xl:px-[12%]'>
