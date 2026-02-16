@@ -190,7 +190,7 @@ const About = () => {
           </div>
            </div>
         {/* div end */}
-        
+
          {/* div start */}
         <div className='w-full py-[8%] px-[2%] md:px-[8%] xl:px-[12%]'>
           <div className='banner bg-cover object-bottom bg-center h-[800px] relative'>
@@ -396,9 +396,8 @@ const About = () => {
         
                                </Link>
                               </div>
-        
-                              
                         </div>
+
                          {/* Image + letter  */}
                          <img 
                          src={member.img}

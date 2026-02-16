@@ -8,6 +8,20 @@ import sericon3 from '../assets/Images/serv-icon6.png'
 import CountUp from 'react-countup'
 import { Icon } from '@iconify/react'
 
+import serviceicon1 from "../assets/Images/service-icon1.png"
+import serviceicon2 from "../assets/Images/service-icon2.png"
+import serviceicon3 from "../assets/Images/service-icon3.png"
+import serviceicon4 from "../assets/Images/service-icon4.png"
+import serviceicon5 from "../assets/Images/service-icon5.png"
+
+import brand1 from "../assets/Images/brand1.png"
+import brand2 from "../assets/Images/brand2.png"
+import brand3 from "../assets/Images/brand3.png"
+import brand4 from "../assets/Images/brand4.png"
+import brand5 from "../assets/Images/brand5.png"
+import brand6 from "../assets/Images/brand6.png"
+import brand7 from "../assets/Images/brand7.png"
+
 //services section 
 const Services = () => {
   return (
@@ -208,6 +222,204 @@ const Services = () => {
                       </div>
                     </div>
                     
+          </div>
+
+           <div className='service py-[2%] px-[2%] md:px-[8%] xl:px-[12%]'>
+                    <div className='service-content'>
+                      <span className='text-black bg-primary px-2 py-3 font-semibold text-md sm:text-xl rounded-sm'> what we do  </span>
+                          <h2 className="text-2xl sm:text-6xl font-semibold max-w-3xl mt-5 leading-tight text-white"> We are a full service agency 
+                          </h2>
+                    </div>
+          
+                    <div  className='flex flex-col w-full mt-8'>
+                       <div className='service-item w-full flex justify-between items-center border-t border-white/20 border-b py-4 gap-5 flex-col-reverse lg:flex-row'>
+                         <div className='flex lg:items-start flex-col md:flex-row gap-5 md:gap-8 w-full text-white lg:w-1/2'>
+                             <span className='text-2xl font-semibold'>0.1</span>
+                             <div className='service-info'>
+                              <h4 className='text-2xl font-semibold pb-0.5'>Brand Strategy </h4>
+                              <p className='text-gray-100 text-lg lg:w-3xl' > Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, aliquam explicabo obcaecati quos, ipsam velit optio itaque tempora corporis quas qui? Iste nisi recusandae maiores fugit voluptate totam voluptatem amet! 
+                              </p>
+                             </div>
+                         </div>
+                           <div className='service-image w-full lg:w-1/2 flex lg:justify-end'>
+                             <div className='border border-white/20 rounded-full w-[150px] h-[150px] p-3'>
+                                <img src={serviceicon1} alt="service-icon" className='invert brightness-0 w-full h-full object-contain rounded-full border border-white/20 border-b py-4 gap-5 '  />
+                             </div>
+                           </div>
+                       </div>
+          
+                        <div className='service-item w-full flex justify-between items-center border-t border-white/20 border-b py-4 gap-5 flex-col-reverse lg:flex-row'>
+                         <div className='flex lg:items-start flex-col md:flex-row gap-5 md:gap-8 w-full text-white lg:w-1/2'>
+                             <span className='text-2xl font-semibold'>0.2</span>
+                             <div className='service-info'>
+                              <h4 className='text-2xl font-semibold pb-0.5'>Social  Media Campaign  </h4>
+                              <p className='text-gray-100 text-lg lg:w-3xl' > Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, aliquam explicabo obcaecati quos, ipsam velit optio itaque tempora corporis quas qui? Iste nisi recusandae maiores fugit voluptate totam voluptatem amet! 
+          
+                              </p>
+                             </div>
+                         </div>
+                           <div className='service-image w-full lg:w-1/2 flex lg:justify-end'>
+                           <div className='border border-white/20 rounded-full w-[150px] h-[150px] p-3'>
+                                <img src={serviceicon2} alt="service-icon" className='invert brightness-0 w-full h-full object-contain rounded-full border border-white/20'/>
+                           </div>
+                           </div>
+                       </div>
+          
+                       <div className='service-item w-full flex justify-between items-center border-t border-white/20 border-b py-4 gap-5 flex-col-reverse lg:flex-row'>
+                         <div className='flex lg:items-start flex-col md:flex-row gap-5 md:gap-8 w-full text-white lg:w-1/2'>
+                             <span className='text-2xl font-semibold'>0.3</span>
+                             <div className='service-info'>
+                              <h4 className='text-2xl font-semibold pb-0.5'> Creative Direction  </h4>
+                              <p className='text-gray-100 text-lg lg:w-3xl' > Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, aliquam explicabo obcaecati quos, ipsam velit optio itaque tempora corporis quas qui? Iste nisi recusandae maiores fugit voluptate totam voluptatem amet! 
+                              </p>
+                             </div>
+                         </div>
+                           <div className='service-image w-full lg:w-1/2 flex lg:justify-end'>
+                           <div className='border border-white/20 rounded-full w-[150px] h-[150px] p-3'>
+                                <img src={serviceicon3} alt="service-icon" className='invert brightness-0 w-full h-full object-contain rounded-full border border-white/20'/>
+                           </div>
+                           </div>
+                       </div>
+          
+                        <div className='service-item w-full flex justify-between items-center border-t border-white/20 border-b py-4 gap-5 flex-col-reverse lg:flex-row'>
+                         <div className='flex lg:items-start flex-col md:flex-row gap-5 md:gap-8 w-full text-white lg:w-1/2'>
+                             <span className='text-2xl font-semibold'>0.4</span>
+                             <div className='service-info'>
+                              <h4 className='text-2xl font-semibold pb-0.5'> Machine Learning / AI   </h4>
+                              <p className='text-gray-100 text-lg lg:w-3xl' > Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, aliquam explicabo obcaecati quos, ipsam velit optio itaque tempora corporis quas qui? Iste nisi recusandae maiores fugit voluptate totam voluptatem amet! 
+                              </p>
+                             </div>
+                         </div>
+                           <div className='service-image w-full lg:w-1/2 flex lg:justify-end'>
+                           <div className='border border-white/20 rounded-full w-[150px] h-[150px] p-3'>
+                                <img src={serviceicon4} alt="service-icon" className='invert brightness-0 w-full h-full object-contain rounded-full border border-white/20'/>
+                           </div>
+                           </div>
+                       </div>
+          
+                        <div className='service-item w-full flex justify-between items-center border-t border-white/20 border-b py-4 gap-5 flex-col-reverse lg:flex-row'>
+                         <div className='flex lg:items-start flex-col md:flex-row gap-5 md:gap-8 w-full text-white lg:w-1/2'>
+                             <span className='text-2xl font-semibold'>0.5</span>
+                             <div className='service-info'>
+                              <h4 className='text-2xl font-semibold pb-0.5'> Visual Identify   </h4>
+                              <p className='text-gray-100 text-lg lg:w-3xl' > Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, aliquam explicabo obcaecati quos, ipsam velit optio itaque tempora corporis quas qui? Iste nisi recusandae maiores fugit voluptate totam voluptatem amet! 
+                              </p>
+                             </div>
+                         </div>
+                           <div className='service-image w-full lg:w-1/2 flex lg:justify-end'>
+                           <div className='border border-white/20 rounded-full w-[150px] h-[150px] p-3'>
+                                <img src={serviceicon5} alt="service-icon" className='invert brightness-0 w-full h-full object-contain rounded-full border border-white/20'/>
+                           </div>
+                           </div>
+                       </div>
+                    </div>
+          </div>
+
+           {/* get in touch */}
+          <div className='py-[8%]'>
+                    <div className='contact py-[8%] px-[2%] md:px-[8%] xl:px-[12%] h-[800px] relative ' >
+                      <div className='team-content w-full lg:w-[60%]  mb-10 '>
+                      <span className='text-black bg-primary px-2 py-3 font-semibold text-md sm:text-xl    rounded-sm'>Get in Touch   </span>
+                      <h2 className="text-2xl sm:text-6xl font-semibold sm:max-w-3xl mt-5 leading-tight text-white"> 
+                           Send us your  bright ideas
+                     </h2>
+                      <Link to="/contact" className='text-primary text-3xl lg:text-5xl font-semibold '>
+                       info@yourcompany
+                      </Link>
+                      <p className='text-gray-100 text-xl pt-5' > 123 Business avenue Los angeles,CA 90001 </p>
+                      </div>
+                      <div className='contact-image'>
+                        <div className='cat-img-circle img-circle--1  '></div>
+                        <div className='cat-img-circle img-circle--2'></div>
+                        <div className='cat-img-circle img-circle--3'></div>
+          
+                        <ul className='text-white grid grid-cols-2 gap-10 absolute right-0 bottom-60 social-icons'>
+                          <li>
+                            <Link to='/' className='social-icon relative overflow-hidden p-10 text-xl font-bold h-[100px] rounded-full bg-black flex gap-8 items-center'>
+                             <Icon icon="ri:facebook-fill" width="44" height="44" className='text-black bg-white p-2 rounded-full ' />
+                             <span> Facebook </span>
+                            </Link>
+                          </li>
+          
+                          <li>
+                            <Link to='/' className='social-icon relative overflow-hidden p-10 text-xl font-bold h-[100px] rounded-full bg-black flex gap-8 items-center'>
+                             <Icon icon="iconoir:instagram" width="44" height="44" className='text-black bg-white p-2 rounded-full ' />
+                             <span> Instagram </span>
+                            </Link>
+                          </li>
+          
+                          <li>
+                            <Link to='/' className='social-icon relative overflow-hidden p-10 text-xl font-bold h-[100px] rounded-full bg-black flex gap-8 items-center'>
+                             <Icon icon="iconoir:twitter" width="44" height="44" className='text-black bg-white p-2 rounded-full ' />
+                             <span> Twitter </span>
+                            </Link>
+                          </li>
+          
+                          <li>
+                            <Link to='/' className='social-icon relative overflow-hidden p-10 text-xl font-bold h-[100px] rounded-full bg-black flex gap-8 items-center'>
+                             <Icon icon="iconoir:twitter" width="44" height="44" className='text-black bg-white p-2 rounded-full ' />
+                             <span> Linkdln</span>
+                            </Link>
+                          </li>
+          
+                        </ul>
+          
+                      </div>
+                    </div>
+          
+          </div>
+
+          {/* Brand */}
+                  <div className=' brand py-[8%] px-[2%] md:px-[8%] xl:px-[12%]'>
+                      <div className='brand-content w-full lg:w-[60%]  mb-10 '>
+                         <span className='text-black bg-primary px-2 py-3 font-semibold text-md sm:text-xl rounded-sm'>Fantasthik & Premie  client  </span>
+                         <h2 className="text-4xl md:text-3xl  lg:text-6xl font-semibold sm:max-w-5xl mt-5   leading-tight text-white"> 
+                         We Have Had the Pleasure of Working with some Clients 
+                        </h2>
+                     </div>
+                     <div className="brand-wrapper grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
+                      <Link to="https://www.google.com/" target="blank" className='brand-item cursor-pointer border border-gray-50/20 p-5 relative flex justify-center items-center ' >
+                        <img src={brand1} alt="brand-image" className='object-contain' />
+                        <span className='text-white' > View Website  </span>
+                      </Link>
+          
+                      <Link to="https://www.google.com/" target="blank" className='brand-item cursor-pointer border border-gray-50/20 p-5 relative flex justify-center items-center ' >
+                        <img src={brand2} alt="brand-image" className='object-contain' />
+                        <span className='text-white' > View Website  </span>
+                      </Link>
+          
+                      <Link to="https://www.google.com/" target="blank" className='brand-item cursor-pointer border border-gray-50/20 p-5 relative flex justify-center items-center ' >
+                        <img src={brand3} alt="brand-image" className='object-contain' />
+                        <span className='text-white' > View Website  </span>
+                      </Link>
+                      
+                      <Link to="https://www.google.com/" target="blank" className='brand-item cursor-pointer border border-gray-50/20 p-5 relative flex justify-center items-center ' >
+                        <img src={brand4} alt="brand-image" className='object-contain' />
+                        <span className='text-white' > View Website  </span>
+                      </Link>
+          
+                      <Link to="https://www.google.com/" target="blank" className='brand-item cursor-pointer border border-gray-50/20 p-5 relative flex justify-center items-center ' >
+                        <img src={brand5} alt="brand-image" className='object-contain' />
+                        <span className='text-white' > View Website  </span>
+                      </Link>
+          
+                      <Link to="https://www.google.com/" target="blank" className='brand-item cursor-pointer border border-gray-50/20 p-5 relative flex justify-center items-center ' >
+                        <img src={brand6} alt="brand-image" className='object-contain' />
+                        <span className='text-white' > View Website  </span>
+                      </Link>
+          
+                      <Link to="https://www.google.com/" target="blank" className='brand-item cursor-pointer border border-gray-50/20 p-5 relative flex justify-center items-center ' >
+                        <img src={brand7} alt="brand-image" className='object-contain' />
+                        <span className='text-white' > View Website  </span>
+                      </Link>
+          
+                      <Link to="https://www.google.com/" target="blank" className='brand-item cursor-pointer border border-gray-50/20 p-5 relative flex justify-center items-center ' >
+                        <img src={brand2} alt="brand-image" className='object-contain' />
+                        <span className='text-white' > View Website  </span>
+                      </Link>
+                     </div>
+             
+          
                   </div>
     </>
   )

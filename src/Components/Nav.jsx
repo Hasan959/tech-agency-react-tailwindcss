@@ -70,6 +70,7 @@ const Nav = () => {
                   </Link>
                 </li>
 
+
                   <li className='relative'>
                     <button onClick={()=> toggleDropdown("pages")}
                       className='flex cursor-pointer items-center text-4xl lg:text-6xl gap-2 font-bold  '>
@@ -79,13 +80,12 @@ const Nav = () => {
                              hanging="40"
                              className={`transition-transform duration-700 
                               ${openDropdown ==="pages" ? "rotate-180" :"" }`} />
-
                     </button>
                     <ul className={`overflow-hidden transition-all duration-700
-                       ${openDropdown === "pages" ? "max-h[400px] opacity-100 mt-3"
+                       ${openDropdown === "pages" ? "max-h-[400px] opacity-100 mt-3"
                         : " max-h-0 opacity-0 "
                        } `}>
-                        {["Team" , "Services","Prices Plan", "FAQ"].map((item)=>(
+                        {["Team" , "Services","Pricing Plan", "FAQ"].map((item)=>(
                           <li key={item} >
                              <Link to={`/${item.toLocaleLowerCase().replace(/\s/g, "")}`}
                               className='block py-2 text-4xl font-semibold'
