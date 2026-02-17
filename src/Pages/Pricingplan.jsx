@@ -20,14 +20,14 @@ const plans = [
   },
   {
     title:'professional package',
-    duration: '3 month',
-    price:'$60.10',
+    duration: '6 month',
+    price:'$160.10',
     Icon:'solar:rocket-bold',
-    recommended:false,
+    recommended:true,
     features:[
       {text: 'unlimited updates',active:true},
       {text:'Custom permissions',active:true},
-      {text:'Custom insfrastructure',active:false},
+      {text:'Custom insfrastructure',active:true},
       {text:'Custom design and features',active:false},
       
     ],
@@ -41,11 +41,11 @@ const plans = [
     features:[
       {text: 'unlimited updates',active:true},
       {text:'Custom permissions',active:true},
-      {text:'Custom insfrastructure',active:false},
-      {text:'Custom design and features',active:false},
+      {text:'Custom insfrastructure',active:true},
+      {text:'Custom design and features',active:true},
       
     ],
-  },
+  }
 ]
 
 const Pricingplan = () => {
@@ -82,6 +82,10 @@ const Pricingplan = () => {
                     Recommended 
                   </span>
                 ) }
+                <div className='p-8 pb-12 border-b border-gray-50/20 text-white'>
+                     <h3 className='text-2xl font-semibold'> {plan.title} </h3>
+                     <p className='text-gray-500 text-sm mt-2'> {plan.duration} </p>
+                </div>
               </div>
             ))
           }
