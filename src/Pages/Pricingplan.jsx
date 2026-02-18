@@ -8,7 +8,7 @@ const plans = [
     title:'Strandard Package',
     duration: '3 month',
     price:'$60.10',
-    Icon:'solar:rocket-bold',
+    icon:'solar:rocket-bold',
     recommended:true,
     features:[
       {text: 'unlimited updates',active:true},
@@ -22,7 +22,7 @@ const plans = [
     title:'professional package',
     duration: '6 month',
     price:'$160.10',
-    Icon:'solar:rocket-bold',
+    icon:'mdi:crown',
     recommended:true,
     features:[
       {text: 'unlimited updates',active:true},
@@ -36,7 +36,7 @@ const plans = [
     title:'Business Package',
     duration: '3 month',
     price:'$60.10',
-    icon:'solar:rocket-bold',
+    icon:'fa-solid:building',
     recommended:false,
     features:[
       {text: 'unlimited updates',active:true},
@@ -85,8 +85,13 @@ const Pricingplan = () => {
                 <div className='p-8 pb-12 border-b border-gray-50/20 text-white'>
                      <h3 className='text-2xl font-semibold'> {plan.title} </h3>
                      <p className='text-gray-500 text-sm mt-2'> {plan.duration} </p>
+                     <h2 className='text-4xl font-bold mt-4' > {plan.price} </h2>
+                </div>
+                <div className=' w-14 h-14 bg-white text-black rounded-full flex items-center justify-center absolut top-42 left-10 ' > 
+                  <Icon icon={plan.icon} className='text-3xl' /> 
                 </div>
               </div>
+              
             ))
           }
         </div>
