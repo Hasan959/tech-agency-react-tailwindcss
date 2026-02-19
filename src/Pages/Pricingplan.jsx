@@ -90,6 +90,14 @@ const Pricingplan = () => {
                 <div className=' w-14 h-14 bg-white text-black rounded-full flex items-center justify-center absolut top-42 left-10 ' > 
                   <Icon icon={plan.icon} className='text-3xl' /> 
                 </div>
+
+                <ul className='px-8 mt-10 mb-8 space-y-4 text-white' >
+                  {plan.features.map((item,i) => (
+                    <li key={i} className={`flex items-center gap-3 ${!item.active ? "line-through text-green-500" : ""}`}>
+                      <Icon icon="mdi:check-bold"  className={item.active ? "text-green-500" : "text-gray-500"} />
+                    </li>
+                  ) ) }
+                </ul>
               </div>
               
             ))
