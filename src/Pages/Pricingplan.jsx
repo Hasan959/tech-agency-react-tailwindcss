@@ -74,7 +74,7 @@ const Pricingplan = () => {
           </li>
           <li>
             <Link to={"/pricingplan"} className='font-normal text-white text-lg'>
-              Pricingplan 
+              Pricingplan  
             </Link>
           </li>
          </ul>
