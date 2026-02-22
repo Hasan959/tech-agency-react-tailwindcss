@@ -171,7 +171,7 @@ const Pricingplan = () => {
                               </div>
                             </div>
                   
-                  </div>
+          </div>
 
         {/* Brand */}
             <div className=' brand py-[8%] px-[2%] md:px-[8%] xl:px-[12%]'>
@@ -224,7 +224,7 @@ const Pricingplan = () => {
                             </div>
                                
                             
-                            </div>
+           </div>
     </>
   )
 }
