@@ -49,6 +49,7 @@ const Projects = () => {
           </li>
          </ul>
         </div>
+        
         <div className='py-[8%] px-[5%] xl:px-[12%] flex flex-col lg:flex-row'>
           <div className='lg:w-[25%] p-5 rounded-lg  '>
             <ul className='text-gray-400 space-y-5 text-xl'>
@@ -63,9 +64,20 @@ const Projects = () => {
           <div className='lg:w-[75%] grid grid-cols-1 md:grid-cols-2'>
             {filteredData.map((item) =>(
               <div key={item.id} className='border-b border-gray-300/20 p-5 rounded-lg group'>
-                
+                <div className='h-[350px] w-full rounded-lg overflow-hidden mb-5'>
+                  <img src={item.image} alt={item.title} className='w-full h-full group-hover:scale-110 object-cover transition-all duration-300'/>
+                </div>
+
+                <Link to={`/projects/${item.id}`}>
+                <span className='text-white border border-gray-50/20 px-2 py-1 font-semibold text-lg rounded-sm'>
+                {item.category}
+                </span>
+                <h3 className='text-2xl text-white sm:text-3xl font-semibold mt-2 hover:text-primary duration-300 transition-all'>
+                  {item.title}
+                </h3>
+                </Link>
               </div>
-            ) )}
+            ))}
           </div>
         </div>
     </>

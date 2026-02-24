@@ -9,6 +9,7 @@ import Services from "./Pages/Services"
 import Pricingplan from "./Pages/Pricingplan"
 import Faq from "./Pages/Faq"
 import Projects from "./Pages/Projects"
+import ProjectDetails from "./Pages/ProjectDetails"
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         <Route path="/pricingplan" element={<Pricingplan/>}/>
         <Route path="/faq" element={<Faq/>}/>
         <Route path="/projects" element={<Projects/>}/>
+        <Route path="/projects/:id" element={<ProjectDetails/>}/>
       </Routes>
       <Footer/>
     
