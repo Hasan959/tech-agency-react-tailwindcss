@@ -2,7 +2,9 @@ import React from 'react'
 
 const BlogDetails = () => {
   return (
-    <div>BlogDetails</div>
+    <>
+      <div className='text-white' >hasan mahmud</div>
+    </>
   )
 }
 

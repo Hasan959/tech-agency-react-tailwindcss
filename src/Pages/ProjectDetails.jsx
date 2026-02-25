@@ -52,7 +52,39 @@ const ProjectDetails = () => {
             </Link>
           </li>
          </ul>
+      </div>
+
+      <div className='py-[8%] px-[2%] md:px-[8%] xl:px-[12%] text-white ' >
+        <div className='w-full h-[500px] overflow-hidden rounded-lg'>
+          <img src={project.image} alt={project.title} className='w-full h-full object-cover ' />
         </div>
+
+        <p className='text-gray-400 text-lg mt-8 leading-relaxed'>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex vel deleniti eveniet corporis natus temporibus soluta libero odio doloremque exercitationem fugiat itaque error et quam nobis illum totam assumenda, blanditiis cumque dolorum! Quia ex quidem fugit laudantium minus. Cumque sequi consequuntur repudiandae aut ipsum doloribus in minima totam magni, rerum corrupti. Ullam ad perferendis consequuntur tenetur exercitationem harum voluptatem accusantium.
+        </p>
+        <p className='text-gray-400 text-lg mt-8 leading-relaxed'>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim excepturi iste doloremque nulla nemo quia facilis magnam aliquam quod.<b> Commodi, excepturi quos? Commodi eius recusandae error voluptate debitis dicta ut ipsa ad consectetur ducimus eveniet possimus</b>, quos eos, ratione ab praesentium nam veniam tempore sint dolore esse temporibus? Eaque, unde!
+        </p>
+      </div>
+      <div className='pb-[8%] px-[2%] md:px-[8%] xl:px-[12%] grid grid-cols-1 xl:grid-cols-2
+       text-white gap-10 w-full lg:w-[90%] xl:w-full'>
+        {projects.map((item)=>(
+          <div key={item.id} className='border- border-gray-300/20 p-5 rounded-lg group'>
+            <div className='h-[550px] w-full rounded-lg overflow-hidden mb-5'>
+              <img src={item.image} alt={item.title} className='w-full h-full group-hover:scale-110 object-cover transition-all duration-300'/>
+            </div>
+            <Link to={`/projects/${item.id}`}>
+               <span className='text-white border border-gray-50/20 px-2 py-1 font-semibold text-lg rounded-sm'>
+                {item.category}
+               </span>
+               <h3 className='text-2xl text-white sm:text-3xl font-semibold mt-2 hover:text-primary duration-300 transition-all'>
+               {item.title}
+                </h3>
+            </Link>
+          </div>
+        ))}
+
+      </div>
     </>
   )
 }
