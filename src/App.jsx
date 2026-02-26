@@ -11,6 +11,7 @@ import Faq from "./Pages/Faq"
 import Projects from "./Pages/Projects"
 import ProjectDetails from "./Pages/ProjectDetails"
 import Blog from "./Pages/Blog"
+import BlogDetails from "./Pages/BlogDetails"
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
         <Route path="/projects" element={<Projects/>}/>
         <Route path="/projects/:id" element={<ProjectDetails/>}/>
         <Route path="/blog" element={<Blog/>}/>
+        <Route path="/blog/:id" element={<BlogDetails/>}/>
       </Routes>
       <Footer/>
     
