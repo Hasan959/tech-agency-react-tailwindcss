@@ -1,9 +1,11 @@
 import React from 'react'
 
+import title_icon from '../assets/Images/title_icon.svg'
+
 const Contact = () => {
-  //contact section 
+  
   return (
-    <div>Contact</div>
+    <div className='text-white' > Contact </div>
   )
 }
 

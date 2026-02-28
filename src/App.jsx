@@ -12,6 +12,8 @@ import Projects from "./Pages/Projects"
 import ProjectDetails from "./Pages/ProjectDetails"
 import Blog from "./Pages/Blog"
 import BlogDetails from "./Pages/BlogDetails"
+import Contact from "./Pages/Contact"
+
 
 function App() {
   return (
@@ -30,6 +32,7 @@ function App() {
         <Route path="/projects/:id" element={<ProjectDetails/>}/>
         <Route path="/blog" element={<Blog/>}/>
         <Route path="/blog/:id" element={<BlogDetails/>}/>
+        <Route path="/contact" element={<Contact/>}/>
       </Routes>
       <Footer/>
     
