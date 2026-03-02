@@ -543,3 +543,10 @@ input,textarea{
     border-radius: 62px;
     transition: .4s cubic-bezier(0.3 ,0,0.3,1 ) ;
 }
+
+textarea{
+    height: 125px;
+    border-radius: 30px;
+    padding-top: 30px;
+
+}
