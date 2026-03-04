@@ -3,6 +3,7 @@ import React, { useState } from 'react'
 import title_icon from '../assets/Images/title_icon.svg'
 import { Link } from 'react-router'
 import { Icon } from '@iconify/react'
+//contact  
 
 const faqs = [
   {
