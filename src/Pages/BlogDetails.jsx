@@ -13,7 +13,7 @@ import post1 from "../assets/Images/blogpost01.jpg"
 import post2 from "../assets/Images/blogpost02.jpg"
 import post3 from "../assets/Images/blogpost03.jpg"
 
-
+//blog details
 const BlogDetails = () => {
 
   const blogs = [
