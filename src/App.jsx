@@ -1,3 +1,4 @@
+// react router Decalarative mode
 import { BrowserRouter, Route, Routes } from "react-router"
 import Nav from "./Components/Nav"
 import Index from "./Pages/Index"
